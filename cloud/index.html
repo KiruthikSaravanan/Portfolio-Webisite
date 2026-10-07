@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#eeeae0">
+    <meta name="description" content="Cloud infrastructure, distributed systems, traffic and resilience — a conceptual study by Kiruthik.">
+    <title>Cloud — Kiruthik</title>
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Kiruthik">
+    <meta property="og:title" content="Cloud — Kiruthik">
+    <meta property="og:description" content="Cloud infrastructure, distributed systems, traffic and resilience — a conceptual study by Kiruthik.">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Cloud — Kiruthik">
+    <meta name="twitter:description" content="Cloud infrastructure, distributed systems, traffic and resilience — a conceptual study by Kiruthik.">
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+    <script src="../theme.js" defer></script>
+    <script src="../site-interactions.js" defer></script>
+    <script src="cloud.js" defer></script>
+    <link rel="stylesheet" href="../styles.css">
+  </head>
+  <body class="grid-paper">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <div class="page-shell cloud-page">
+      <header class="site-header">
+        <a class="wordmark" href="../index.html" aria-label="Portfolio, beginning">PORTFOLIO<span class="wordmark-mark" aria-hidden="true">.</span></a>
+        <span class="header-edition editorial-label">Security / Systems / Software</span>
+        <a class="menu-link editorial-label" href="../index.html#directions">Index <span class="arrow" aria-hidden="true">↗</span></a>
+        <button class="theme-toggle editorial-label" type="button" aria-label="Switch to dark mode" aria-pressed="false">
+          <span class="theme-toggle-option theme-toggle-option--light">Light</span><span class="theme-toggle-divider" aria-hidden="true">/</span><span class="theme-toggle-option theme-toggle-option--dark">Dark</span><span class="theme-toggle-indicator" aria-hidden="true"></span>
+        </button>
+      </header>
+
+      <main id="main-content" tabindex="-1">
+        <section class="cloud-hero" aria-labelledby="cloud-title">
+          <div class="cloud-hero-meta">
+            <a class="cloud-back editorial-label" href="../index.html#directions">← Back / index</a>
+            <span class="editorial-label">05 / 06 &nbsp;—&nbsp; Cloud / systems</span>
+          </div>
+          <div class="cloud-hero-layout">
+            <div class="cloud-hero-copy">
+              <p class="cloud-kicker editorial-label"><span class="cloud-coordinate-mark" aria-hidden="true"></span> Distributed / connected / observed</p>
+              <h1 class="cloud-title" id="cloud-title"><span>DISTRIBUTED</span><span>SYSTEMS<span class="cloud-title-period">.</span></span></h1>
+              <p class="cloud-deck">One request. Many places to go.</p>
+            </div>
+            <aside class="cloud-hero-note paper-card" aria-label="Conceptual infrastructure map">
+              <span class="editorial-label">Topology / study 05</span>
+              <span class="cloud-hero-network" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><b></b></span>
+              <span class="editorial-label">Regions / routes / services</span>
+            </aside>
+          </div>
+          <div class="cloud-hero-foot editorial-label">
+            <span>Infrastructure / traffic / resilience</span>
+            <span class="cloud-hero-coordinate">REG / 05—06</span>
+          </div>
+        </section>
+
+        <section class="cloud-map-section" aria-labelledby="cloud-map-heading">
+          <div class="cloud-section-heading">
+            <div>
+              <p class="editorial-label"><span class="cloud-coordinate-mark cloud-coordinate-mark--small" aria-hidden="true"></span> Distributed map / 01</p>
+              <h2 id="cloud-map-heading">Routes across<br>regions<span>.</span></h2>
+            </div>
+            <p class="cloud-section-aside">A conceptual topology.<br>Select a node to inspect its role.</p>
+          </div>
+
+          <figure class="cloud-map-plate paper-card" aria-labelledby="cloud-map-caption">
+            <figcaption class="cloud-map-caption editorial-label" id="cloud-map-caption">
+              <span>Network study / 001</span><span>Conceptual system / not deployed infrastructure</span>
+            </figcaption>
+            <div class="cloud-map-desktop">
+              <svg class="cloud-map-svg" viewBox="0 0 1000 650" role="group" aria-labelledby="topology-title" aria-describedby="topology-description">
+                <title id="topology-title">Conceptual multi-region cloud infrastructure map</title>
+                <desc id="topology-description">Traffic moves from the internet through an edge and load balancer to services in two regions. Those services connect to shared data and object storage. Select labeled nodes for descriptions.</desc>
+                <defs>
+                  <pattern id="cloud-grid" width="26" height="26" patternUnits="userSpaceOnUse">
+                    <path d="M26 0H0V26" fill="none" stroke="var(--line)" stroke-width="1"/>
+                  </pattern>
+                  <marker id="cloud-arrow" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+                    <path d="M0 0L8 4 0 8Z" fill="var(--cloud-accent)"/>
+                  </marker>
+                </defs>
+                <rect class="cloud-map-field" x="12" y="12" width="976" height="626"/>
+                <g class="cloud-map-lines" aria-hidden="true">
+                  <path class="cloud-route" data-cloud-route="edge" d="M500 108V168"/>
+                  <path class="cloud-route" data-cloud-route="dispatch" d="M500 226V270H275V318"/>
+                  <path class="cloud-route" data-cloud-route="dispatch" d="M500 270H725V318"/>
+                  <path class="cloud-route" data-cloud-route="service-a" d="M275 370V426H422V478"/>
+                  <path class="cloud-route" data-cloud-route="service-b" d="M725 370V426H578V478"/>
+                  <path class="cloud-route cloud-route--return" data-cloud-route="return" d="M422 524V570H500V226"/>
+                  <path class="cloud-route cloud-route--return" data-cloud-route="return" d="M578 524V570H500"/>
+                  <path class="cloud-route cloud-route--object" data-cloud-route="object" d="M725 370V478"/>
+                  <path class="cloud-route cloud-route--packet" data-cloud-route="edge dispatch" d="M500 108V168M500 226V270H275V318"/>
+                </g>
+                <rect class="cloud-region-boundary" x="58" y="286" width="434" height="180" rx="1"/>
+                <rect class="cloud-region-boundary cloud-region-boundary--two" x="508" y="286" width="434" height="180" rx="1"/>
+                <g class="cloud-map-annotations" aria-hidden="true">
+                  <text x="78" y="276">REGION 01 / CONCEPT</text><text x="528" y="276">REGION 02 / CONCEPT</text>
+                  <text x="78" y="450">ZONE A</text><text x="306" y="450">ZONE B</text>
+                  <text x="528" y="450">ZONE A</text><text x="756" y="450">ZONE B</text>
+                  <text x="76" y="615">ROUTE / 01—04</text><text x="820" y="615">NOT TO SCALE</text>
+                  <path d="M887 88h24M899 76v24M91 516h20M101 506v20"/>
+                </g>
+                <g class="cloud-map-node" role="button" tabindex="0" aria-pressed="false" aria-label="Internet edge: entry point for external requests" data-cloud-node="edge" data-links="edge dispatch return" transform="translate(500 82)">
+                  <circle class="cloud-node-ring" r="30"/><circle class="cloud-node-core" r="5"/>
+                  <text y="-46">INTERNET</text><text class="cloud-node-sub" y="48">ENTRY / EDGE</text>
+                </g>
+                <g class="cloud-map-node" role="button" tabindex="0" aria-pressed="false" aria-label="Traffic router: directs requests toward a service region" data-cloud-node="router" data-links="edge dispatch" transform="translate(500 198)">
+                  <path class="cloud-node-ring" d="M0-34L34 0 0 34-34 0Z"/><circle class="cloud-node-core" r="5"/>
+                  <text y="-52">TRAFFIC ROUTER</text><text class="cloud-node-sub" y="53">DISTRIBUTE</text>
+                </g>
+                <g class="cloud-map-node cloud-map-node--service" role="button" tabindex="0" aria-pressed="false" aria-label="Region 01 service node: conceptual application service" data-cloud-node="service-a" data-links="dispatch service-a return" transform="translate(275 344)">
+                  <rect class="cloud-node-ring" x="-50" y="-26" width="100" height="52"/><circle class="cloud-node-core" r="5"/>
+                  <text y="-42">SERVICE A</text><text class="cloud-node-sub" y="46">REGION 01</text>
+                </g>
+                <g class="cloud-map-node cloud-map-node--service" role="button" tabindex="0" aria-pressed="false" aria-label="Region 02 service node: conceptual application service" data-cloud-node="service-b" data-links="dispatch service-b return object" transform="translate(725 344)">
+                  <rect class="cloud-node-ring" x="-50" y="-26" width="100" height="52"/><circle class="cloud-node-core" r="5"/>
+                  <text y="-42">SERVICE B</text><text class="cloud-node-sub" y="46">REGION 02</text>
+                </g>
+                <g class="cloud-map-node cloud-map-node--data" role="button" tabindex="0" aria-pressed="false" aria-label="Data store: conceptual persistent application data" data-cloud-node="data" data-links="service-a service-b return" transform="translate(422 502)">
+                  <circle class="cloud-node-ring" r="28"/><circle class="cloud-node-core" r="5"/>
+                  <text y="-43">DATA</text><text class="cloud-node-sub" y="47">STATE</text>
+                </g>
+                <g class="cloud-map-node cloud-map-node--storage" role="button" tabindex="0" aria-pressed="false" aria-label="Object storage: conceptual storage for files and artifacts" data-cloud-node="storage" data-links="service-b object" transform="translate(725 502)">
+                  <rect class="cloud-node-ring" x="-35" y="-24" width="70" height="48"/><path class="cloud-node-core" d="M-7-8H7V8H-7Z"/>
+                  <text y="-42">OBJECT STORE</text><text class="cloud-node-sub" y="45">FILES / ARTIFACTS</text>
+                </g>
+                <g class="cloud-map-compass" aria-hidden="true" transform="translate(925 82)">
+                  <path d="M0 15V-15M-6-7L0-15 6-7"/><text y="29">N</text>
+                </g>
+              </svg>
+            </div>
+            <div class="cloud-map-mobile" aria-label="Conceptual request path through cloud infrastructure">
+              <button class="cloud-mobile-node" type="button" aria-pressed="false" data-cloud-node="edge" data-links="edge dispatch return"><span class="editorial-label">00 / EDGE</span><b>Internet entry</b><small>Requests arrive</small></button>
+              <span class="cloud-mobile-connector" aria-hidden="true">↓</span>
+              <button class="cloud-mobile-node" type="button" aria-pressed="false" data-cloud-node="router" data-links="edge dispatch"><span class="editorial-label">01 / ROUTE</span><b>Traffic router</b><small>Choose a path</small></button>
+              <div class="cloud-mobile-regions">
+                <div class="cloud-mobile-region">
+                  <span class="editorial-label">Region 01 / concept</span>
+                  <button class="cloud-mobile-node" type="button" aria-pressed="false" data-cloud-node="service-a" data-links="dispatch service-a return"><span class="editorial-label">ZONE A / SERVICE</span><b>Application node A</b><small>One available route</small></button>
+                </div>
+                <div class="cloud-mobile-region">
+                  <span class="editorial-label">Region 02 / concept</span>
+                  <button class="cloud-mobile-node" type="button" aria-pressed="false" data-cloud-node="service-b" data-links="dispatch service-b return object"><span class="editorial-label">ZONE A / SERVICE</span><b>Application node B</b><small>Another available route</small></button>
+                </div>
+              </div>
+              <span class="cloud-mobile-connector cloud-mobile-connector--split" aria-hidden="true">↙ &nbsp;&nbsp;&nbsp; ↘</span>
+              <div class="cloud-mobile-data">
+                <button class="cloud-mobile-node" type="button" aria-pressed="false" data-cloud-node="data" data-links="service-a service-b return"><span class="editorial-label">DATA / STATE</span><b>Database</b><small>Persistent records</small></button>
+                <button class="cloud-mobile-node" type="button" aria-pressed="false" data-cloud-node="storage" data-links="service-b object"><span class="editorial-label">OBJECTS / FILES</span><b>Storage</b><small>Artifacts and objects</small></button>
+              </div>
+            </div>
+            <div class="cloud-map-controls">
+              <button class="cloud-flow-button editorial-label" type="button" data-cloud-flow>
+                <span aria-hidden="true">▶</span><span data-cloud-flow-label>Simulate request</span>
+              </button>
+              <p class="cloud-map-readout" aria-live="polite"><span data-cloud-node-title>Select a node</span><span data-cloud-node-copy>Inspect the route, region, or storage layer.</span></p>
+              <span class="cloud-map-status editorial-label"><i aria-hidden="true"></i><span data-cloud-flow-status>Simulation idle</span></span>
+            </div>
+            <span class="cloud-map-corner cloud-map-corner--top" aria-hidden="true"></span>
+            <span class="cloud-map-corner cloud-map-corner--bottom" aria-hidden="true"></span>
+          </figure>
+          <p class="cloud-map-foot editorial-label">Map is illustrative / regions and services are conceptual, not deployed infrastructure.</p>
+        </section>
+
+        <section class="cloud-regions-section" aria-labelledby="cloud-regions-heading">
+          <div class="cloud-section-heading">
+            <div>
+              <p class="editorial-label">02 — Distribution / availability</p>
+              <h2 id="cloud-regions-heading">Distance builds<br>options<span>.</span></h2>
+            </div>
+            <p class="cloud-section-aside">Regions and zones are conceptual.<br>No live deployment is represented.</p>
+          </div>
+          <div class="cloud-region-layout">
+            <article class="cloud-region">
+              <div class="cloud-region-top"><span class="editorial-label">Region / 01</span><span class="cloud-region-coordinate">R—01</span></div>
+              <p class="cloud-region-caption">Separate failure domains</p>
+              <div class="cloud-zones">
+                <div><span class="editorial-label">Zone A</span><i></i><b>Service</b></div>
+                <div><span class="editorial-label">Zone B</span><i></i><b>Service</b></div>
+                <div><span class="editorial-label">Zone C</span><i></i><b>Data</b></div>
+              </div>
+              <p class="cloud-region-foot editorial-label">Independent placement / concept</p>
+            </article>
+            <div class="cloud-region-link" aria-hidden="true"><span>ROUTE / FAILOVER</span><i></i></div>
+            <article class="cloud-region cloud-region--second">
+              <div class="cloud-region-top"><span class="editorial-label">Region / 02</span><span class="cloud-region-coordinate">R—02</span></div>
+              <p class="cloud-region-caption">Another place to respond</p>
+              <div class="cloud-zones">
+                <div><span class="editorial-label">Zone A</span><i></i><b>Service</b></div>
+                <div><span class="editorial-label">Zone B</span><i></i><b>Service</b></div>
+                <div><span class="editorial-label">Zone C</span><i></i><b>Replica*</b></div>
+              </div>
+              <p class="cloud-region-foot editorial-label">*Illustrative / not configured</p>
+            </article>
+          </div>
+          <p class="cloud-region-note editorial-label"><span class="cloud-coordinate-mark cloud-coordinate-mark--small" aria-hidden="true"></span> Distribution can add options; it also adds coordination.</p>
+        </section>
+
+        <section class="cloud-architecture-section" aria-labelledby="cloud-architecture-heading">
+          <div class="cloud-section-heading">
+            <div>
+              <p class="editorial-label"><span class="cloud-coordinate-mark cloud-coordinate-mark--small" aria-hidden="true"></span> Request anatomy / 03</p>
+              <h2 id="cloud-architecture-heading">A path through<br>the layers<span>.</span></h2>
+            </div>
+            <p class="cloud-section-aside">A simplified architecture.<br>Components vary by system.</p>
+          </div>
+          <ol class="cloud-architecture">
+            <li><span class="editorial-label">01 / CLIENT</span><b>Browser</b><small>Request begins</small></li>
+            <li><span class="editorial-label">02 / NAME</span><b>DNS</b><small>Find destination</small></li>
+            <li><span class="editorial-label">03 / EDGE</span><b>Load balancer</b><small>Choose service</small></li>
+            <li><span class="editorial-label">04 / COMPUTE</span><b>Application</b><small>Process request</small></li>
+            <li><span class="editorial-label">05 / STATE</span><b>Database</b><small>Read / write</small></li>
+            <li><span class="editorial-label">06 / OBJECTS</span><b>Storage</b><small>Files / artifacts</small></li>
+          </ol>
+          <div class="cloud-supporting-systems">
+            <span class="editorial-label">Around the path</span>
+            <div><span>Identity</span><span>Networking</span><span>Secrets</span><span>Logs</span><span>Monitoring</span></div>
+          </div>
+          <p class="cloud-architecture-note editorial-label">Simplified model / supporting systems omitted from the flow</p>
+        </section>
+
+        <section class="cloud-resilience-section" aria-labelledby="cloud-resilience-heading">
+          <div class="cloud-section-heading">
+            <div>
+              <p class="editorial-label">04 — Resilience / simulation</p>
+              <h2 id="cloud-resilience-heading">When a node<br>goes quiet<span>.</span></h2>
+            </div>
+            <p class="cloud-section-aside">Disable a node and observe the route.<br>Conceptual failover only.</p>
+          </div>
+          <div class="cloud-failover-plate paper-card" data-failover-state="normal">
+            <div class="cloud-failover-header">
+              <span class="editorial-label">Route study / 02 paths</span>
+              <span class="cloud-failover-mode editorial-label"><i aria-hidden="true"></i><span data-failover-state-label>Normal / both nodes available</span></span>
+            </div>
+            <div class="cloud-failover-map" aria-label="Conceptual service redundancy illustration">
+              <div class="cloud-failover-source"><span class="editorial-label">TRAFFIC</span><b>Router</b></div>
+              <div class="cloud-failover-routes" aria-hidden="true"><i class="cloud-fail-path cloud-fail-path--one"></i><i class="cloud-fail-path cloud-fail-path--two"></i></div>
+              <div class="cloud-failover-node cloud-failover-node--one" data-failover-node="one"><span class="editorial-label">NODE A</span><b>Service</b><span class="cloud-node-fault" aria-hidden="true">×</span></div>
+              <div class="cloud-failover-node cloud-failover-node--two" data-failover-node="two"><span class="editorial-label">NODE B</span><b>Service</b></div>
+              <div class="cloud-failover-destination"><span class="editorial-label">APPLICATION</span><b>Response</b></div>
+            </div>
+            <div class="cloud-failover-footer">
+              <button class="cloud-fail-button editorial-label" type="button" aria-pressed="false" data-failover-toggle>Simulate node A failure</button>
+              <p class="cloud-failover-copy" aria-live="polite" data-failover-copy>Both paths are available in this conceptual model.</p>
+              <span class="cloud-failover-disclaimer editorial-label">Simulation / no real infrastructure</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="cloud-concepts-section" aria-labelledby="cloud-concepts-heading">
+          <div class="cloud-section-heading">
+            <div>
+              <p class="editorial-label"><span class="cloud-coordinate-mark cloud-coordinate-mark--small" aria-hidden="true"></span> Infrastructure vocabulary / 05</p>
+              <h2 id="cloud-concepts-heading">Pieces of<br>the platform<span>.</span></h2>
+            </div>
+            <p class="cloud-section-aside">Concept groups, not endorsements<br>or claims of expertise.</p>
+          </div>
+          <div class="cloud-concept-index">
+            <article><span class="editorial-label">01 / COMPUTE</span><h3>Run</h3><p>Instances / containers / serverless</p><span class="cloud-concept-mark" aria-hidden="true">C—</span></article>
+            <article><span class="editorial-label">02 / NETWORK</span><h3>Connect</h3><p>VPC / subnet / route / boundary</p><span class="cloud-concept-mark" aria-hidden="true">N—</span></article>
+            <article><span class="editorial-label">03 / STORAGE</span><h3>Keep</h3><p>Object / block / relational data</p><span class="cloud-concept-mark" aria-hidden="true">S—</span></article>
+            <article><span class="editorial-label">04 / IDENTITY</span><h3>Control</h3><p>IAM / roles / policies</p><span class="cloud-concept-mark" aria-hidden="true">I—</span></article>
+            <article><span class="editorial-label">05 / SIGNALS</span><h3>Observe</h3><p>Logs / metrics / alerts</p><span class="cloud-concept-mark" aria-hidden="true">O—</span></article>
+          </div>
+          <div class="cloud-learning-strip">
+            <span class="editorial-label">Learning / exploring</span>
+            <div><span>AWS concepts</span><span>EC2 / S3 / IAM</span><span>VPC / CloudWatch</span><span>Linux / Git</span></div>
+            <p class="editorial-label">Study direction / not professional cloud experience</p>
+          </div>
+        </section>
+
+        <section class="cloud-security-section" aria-labelledby="cloud-security-heading">
+          <div class="cloud-section-heading">
+            <div>
+              <p class="editorial-label">06 — Trust boundaries</p>
+              <h2 id="cloud-security-heading">Every route<br>has a boundary<span>.</span></h2>
+            </div>
+            <p class="cloud-section-aside">Cloud systems still need careful<br>identity, network, and data controls.</p>
+          </div>
+          <div class="cloud-security-layout">
+            <ol class="cloud-security-chain">
+              <li><span class="editorial-label">01</span><b>Identity</b><small>Who can act?</small></li>
+              <li><span class="editorial-label">02</span><b>Network</b><small>Where can traffic go?</small></li>
+              <li><span class="editorial-label">03</span><b>Service</b><small>What can it access?</small></li>
+              <li><span class="editorial-label">04</span><b>Data</b><small>How is it protected?</small></li>
+              <li><span class="editorial-label">05</span><b>Monitoring</b><small>What should be visible?</small></li>
+            </ol>
+            <div class="cloud-security-copy">
+              <p class="editorial-label">Security follows the connection</p>
+              <p>Least privilege, segmented networks, protected secrets, encryption, and useful logs make the path safer to operate.</p>
+              <a class="cloud-security-link editorial-label" href="../cybersecurity/">Explore security <span aria-hidden="true">→</span></a>
+            </div>
+          </div>
+        </section>
+
+        <section class="cloud-observability-section" aria-labelledby="cloud-observability-heading">
+          <div class="cloud-section-heading">
+            <div>
+              <p class="editorial-label"><span class="cloud-coordinate-mark cloud-coordinate-mark--small" aria-hidden="true"></span> Signal / 07</p>
+              <h2 id="cloud-observability-heading">Read the<br>system<span>.</span></h2>
+            </div>
+            <p class="cloud-section-aside">Signal sketches only.<br>No live telemetry or measured values.</p>
+          </div>
+          <div class="cloud-signal-board" aria-label="Conceptual monitoring signal visualizations">
+            <div class="cloud-signal-row"><span class="editorial-label">Requests</span><svg viewBox="0 0 520 72" role="img" aria-label="Decorative conceptual request signal"><path d="M0 49H40L53 28 68 50H112L127 39 142 50H190L208 15 225 50H273L289 34 306 50H352L366 25 383 50H428L443 38 460 50H520"/></svg><b>FLOW</b></div>
+            <div class="cloud-signal-row"><span class="editorial-label">Latency</span><svg viewBox="0 0 520 72" role="img" aria-label="Decorative conceptual latency signal"><path d="M0 35H72L87 34 101 53 116 25 131 38H202L216 34 232 14 246 47 260 35H327L340 35 356 56 371 26 385 37H455L468 33 482 20 497 38H520"/></svg><b>TIME</b></div>
+            <div class="cloud-signal-row"><span class="editorial-label">Errors</span><svg viewBox="0 0 520 72" role="img" aria-label="Decorative conceptual error signal"><path d="M0 38H99L114 36 128 54 143 31 158 39H265L279 38 293 26 307 46 322 37H411L426 37 440 54 455 29 470 39H520"/></svg><b>CHECK</b></div>
+            <p class="cloud-signal-note editorial-label"><i aria-hidden="true"></i> Conceptual traces / not live measurements</p>
+          </div>
+        </section>
+
+        <section class="cloud-project-section" aria-labelledby="cloud-project-heading">
+          <div class="cloud-section-heading">
+            <div>
+              <p class="editorial-label">08 — Next stage / conceptual</p>
+              <h2 id="cloud-project-heading">A platform<br>with room to grow<span>.</span></h2>
+            </div>
+            <p class="cloud-section-aside">A possible future architecture.<br>Not a current cloud deployment.</p>
+          </div>
+          <article class="cloud-project">
+            <div class="cloud-project-map" aria-label="Future conceptual architecture for Cyber Memory Network">
+              <span class="cloud-project-map-label editorial-label">Future architecture / not deployed</span>
+              <div class="cloud-future-path"><span>Local client</span><i aria-hidden="true">↓</i><span>API</span><i aria-hidden="true">↓</i><span>Cloud service</span><i aria-hidden="true">↓</i><span>Data store</span></div>
+              <span class="cloud-project-map-index">CMN / NEXT</span>
+            </div>
+            <div class="cloud-project-copy">
+              <p class="editorial-label"><span aria-hidden="true"></span> Current project / Phase I in progress</p>
+              <h3>Cyber Memory<br>Network</h3>
+              <p>An AI-assisted security knowledge and incident memory platform for organizing incidents, IOCs, investigations, and MITRE ATT&amp;CK relationships.</p>
+              <p class="cloud-project-caveat">Centralized cloud hosting is a possible next stage for study; it is not part of a claimed production deployment.</p>
+              <a class="cloud-project-link editorial-label" href="../projects/#cyber-memory">Project details <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+        </section>
+      </main>
+
+      <nav class="cloud-page-nav" aria-label="Domain navigation">
+        <a class="cloud-nav-link cloud-nav-link--previous" href="../full-stack/">
+          <span class="editorial-label">Previous / 04</span><span>← Full Stack</span>
+        </a>
+        <a class="cloud-nav-index editorial-label" href="../index.html#directions">All directions ↗</a>
+        <a class="cloud-nav-link cloud-nav-link--next" href="../ai/">
+          <span class="editorial-label">Next / 06</span><span>AI →</span>
+        </a>
+      </nav>
+    </div>
+  </body>
+</html>

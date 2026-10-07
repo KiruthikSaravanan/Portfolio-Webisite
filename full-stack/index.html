@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#eeeae0">
+    <meta name="description" content="Interfaces, application logic, APIs and data — full stack systems by Kiruthik.">
+    <title>Full Stack — Kiruthik</title>
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Kiruthik">
+    <meta property="og:title" content="Full Stack — Kiruthik">
+    <meta property="og:description" content="Interfaces, application logic, APIs and data — full stack systems by Kiruthik.">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Full Stack — Kiruthik">
+    <meta name="twitter:description" content="Interfaces, application logic, APIs and data — full stack systems by Kiruthik.">
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+    <script src="../theme.js" defer></script>
+    <script src="../site-interactions.js" defer></script>
+    <script src="full-stack.js" defer></script>
+    <link rel="stylesheet" href="../styles.css">
+  </head>
+  <body class="grid-paper">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <div class="page-shell fullstack-page">
+      <header class="site-header">
+        <a class="wordmark" href="../index.html" aria-label="Portfolio, beginning">PORTFOLIO<span class="wordmark-mark" aria-hidden="true">.</span></a>
+        <span class="header-edition editorial-label">Security / Systems / Software</span>
+        <a class="menu-link editorial-label" href="../index.html#directions">Index <span class="arrow" aria-hidden="true">↗</span></a>
+        <button class="theme-toggle editorial-label" type="button" aria-label="Switch to dark mode" aria-pressed="false">
+          <span class="theme-toggle-option theme-toggle-option--light">Light</span><span class="theme-toggle-divider" aria-hidden="true">/</span><span class="theme-toggle-option theme-toggle-option--dark">Dark</span><span class="theme-toggle-indicator" aria-hidden="true"></span>
+        </button>
+      </header>
+
+      <main id="main-content" tabindex="-1">
+        <section class="fullstack-hero" aria-labelledby="fullstack-title">
+          <div class="fullstack-hero-meta">
+            <a class="fullstack-back editorial-label" href="../index.html#directions">← Back / index</a>
+            <span class="editorial-label">04 / 06 &nbsp;—&nbsp; Interfaces / systems</span>
+          </div>
+          <div class="fullstack-hero-layout">
+            <div class="fullstack-hero-copy">
+              <p class="fullstack-kicker editorial-label"><span class="fullstack-signal" aria-hidden="true"></span> From interface to infrastructure</p>
+              <h1 class="fullstack-title" id="fullstack-title"><span>FULL</span><span>STACK<span class="fullstack-period">.</span></span></h1>
+              <p class="fullstack-deck">One interface. Many connected parts.</p>
+            </div>
+            <aside class="fullstack-hero-note paper-card" aria-label="System layers">
+              <span class="editorial-label">Stack / 06 layers</span>
+              <span class="fullstack-hero-stack" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></span>
+              <span class="editorial-label">UI → data → running system</span>
+            </aside>
+          </div>
+          <div class="fullstack-hero-foot editorial-label">
+            <span>Interfaces / logic / APIs / data</span>
+            <span class="fullstack-hero-coordinate">ARCH / 04—06</span>
+          </div>
+        </section>
+
+        <section class="fullstack-stack-section" aria-labelledby="stack-heading">
+          <div class="fullstack-section-heading">
+            <div>
+              <p class="editorial-label"><span class="fullstack-signal fullstack-signal--small" aria-hidden="true"></span> Application stack / 01</p>
+              <h2 id="stack-heading">Inside the<br>request<span>.</span></h2>
+            </div>
+            <p class="fullstack-section-aside">A visual model of an application path.<br>No live service is called.</p>
+          </div>
+
+          <figure class="fullstack-stack-plate paper-card" aria-labelledby="stack-caption">
+            <figcaption class="fullstack-stack-caption editorial-label" id="stack-caption">
+              <span>System map / 001</span><span>Request + response / visual simulation</span>
+            </figcaption>
+            <div class="fullstack-stack-layout">
+              <div class="fullstack-side-note fullstack-side-note--request editorial-label" aria-hidden="true">
+                <span>INPUT</span><i></i><span>REQUEST →</span>
+              </div>
+              <ol class="fullstack-stack" aria-label="Application layers. Select a layer to inspect it.">
+                <li>
+                  <button class="fullstack-layer is-active" type="button" aria-pressed="true" data-stack-layer="client">
+                    <span class="fullstack-layer-index editorial-label">00 / CLIENT</span><span class="fullstack-layer-name">Browser / person</span><span class="fullstack-layer-detail">Input &amp; output</span><span class="fullstack-layer-port" aria-hidden="true"></span>
+                  </button>
+                </li>
+                <li>
+                  <button class="fullstack-layer" type="button" aria-pressed="false" data-stack-layer="frontend">
+                    <span class="fullstack-layer-index editorial-label">01 / FRONTEND</span><span class="fullstack-layer-name">Interface</span><span class="fullstack-layer-detail">HTML / CSS / JavaScript</span><span class="fullstack-layer-port" aria-hidden="true"></span>
+                  </button>
+                </li>
+                <li>
+                  <button class="fullstack-layer" type="button" aria-pressed="false" data-stack-layer="api">
+                    <span class="fullstack-layer-index editorial-label">02 / API</span><span class="fullstack-layer-name">Request boundary</span><span class="fullstack-layer-detail">Send / receive</span><span class="fullstack-layer-port" aria-hidden="true"></span>
+                  </button>
+                </li>
+                <li>
+                  <button class="fullstack-layer" type="button" aria-pressed="false" data-stack-layer="logic">
+                    <span class="fullstack-layer-index editorial-label">03 / APPLICATION</span><span class="fullstack-layer-name">Business logic</span><span class="fullstack-layer-detail">Validate / process</span><span class="fullstack-layer-port" aria-hidden="true"></span>
+                  </button>
+                </li>
+                <li>
+                  <button class="fullstack-layer" type="button" aria-pressed="false" data-stack-layer="database">
+                    <span class="fullstack-layer-index editorial-label">04 / DATABASE</span><span class="fullstack-layer-name">Stored state</span><span class="fullstack-layer-detail">Read / write</span><span class="fullstack-layer-port" aria-hidden="true"></span>
+                  </button>
+                </li>
+                <li>
+                  <button class="fullstack-layer" type="button" aria-pressed="false" data-stack-layer="infrastructure">
+                    <span class="fullstack-layer-index editorial-label">05 / INFRASTRUCTURE</span><span class="fullstack-layer-name">Running environment</span><span class="fullstack-layer-detail">Build / deploy</span><span class="fullstack-layer-port" aria-hidden="true"></span>
+                  </button>
+                </li>
+              </ol>
+              <div class="fullstack-side-note fullstack-side-note--response editorial-label" aria-hidden="true">
+                <span>← RESPONSE</span><i></i><span>OUTPUT</span>
+              </div>
+            </div>
+            <div class="fullstack-stack-controls">
+              <button class="fullstack-run editorial-label" type="button" data-run-request>
+                <span class="fullstack-run-icon" aria-hidden="true">▶</span><span data-run-label>Run request simulation</span>
+              </button>
+              <span class="fullstack-simulation-label editorial-label">Illustrative only / no backend request</span>
+            </div>
+            <div class="fullstack-stack-readout" aria-live="polite">
+              <span class="fullstack-readout-index editorial-label" data-stack-index>00 / CLIENT</span>
+              <p data-stack-copy>Input starts at the client. The interface gives it a place to begin.</p>
+              <span class="fullstack-readout-state editorial-label"><i aria-hidden="true"></i><span data-stack-state>Waiting for input</span></span>
+            </div>
+            <span class="fullstack-plate-corner fullstack-plate-corner--top" aria-hidden="true"></span>
+            <span class="fullstack-plate-corner fullstack-plate-corner--bottom" aria-hidden="true"></span>
+          </figure>
+        </section>
+
+        <section class="fullstack-interface-section" aria-labelledby="interface-heading">
+          <div class="fullstack-section-heading">
+            <div>
+              <p class="editorial-label">02 — The visible layer</p>
+              <h2 id="interface-heading">A small<br>interface<span>.</span></h2>
+            </div>
+            <p class="fullstack-section-aside">A design artifact, not a working product.<br>Built from the page’s own visual language.</p>
+          </div>
+          <div class="fullstack-interface-layout">
+            <div class="fullstack-browser paper-card" aria-label="Illustrative browser interface mockup">
+              <div class="fullstack-browser-bar">
+                <span class="fullstack-browser-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+                <span class="fullstack-browser-address editorial-label">local / interface-study</span>
+                <span class="fullstack-browser-count editorial-label">01</span>
+              </div>
+              <div class="fullstack-app">
+                <div class="fullstack-app-nav"><span class="fullstack-app-mark">FIELD<span>.</span></span><span class="editorial-label">Index &nbsp; / &nbsp; Notes</span></div>
+                <div class="fullstack-app-body">
+                  <p class="editorial-label">Entry / 001</p>
+                  <h3>One clear<br>next step.</h3>
+                  <p class="fullstack-app-copy">A miniature interface fragment. Content, action, and feedback in one view.</p>
+                  <button class="fullstack-app-button" type="button" data-interface-action aria-describedby="interface-status">Continue <span aria-hidden="true">→</span></button>
+                  <span class="fullstack-app-status editorial-label" id="interface-status" aria-live="polite">State / ready</span>
+                </div>
+                <div class="fullstack-app-footer editorial-label"><span>Client / 01</span><span>Responsive by design</span></div>
+              </div>
+            </div>
+            <div class="fullstack-interface-notes">
+              <p class="editorial-label">Client-side pieces</p>
+              <ul>
+                <li><span>01</span><b>Structure</b><small>HTML</small></li>
+                <li><span>02</span><b>Presentation</b><small>CSS</small></li>
+                <li><span>03</span><b>Interaction</b><small>JavaScript</small></li>
+                <li><span>04</span><b>Layout</b><small>Responsive</small></li>
+              </ul>
+              <p class="fullstack-code-label editorial-label">Interaction / fragment</p>
+              <pre class="fullstack-code"><code>const response = await api.request();</code></pre>
+            </div>
+          </div>
+        </section>
+
+        <section class="fullstack-backend-section" aria-labelledby="backend-heading">
+          <div class="fullstack-section-heading">
+            <div>
+              <p class="editorial-label"><span class="fullstack-signal fullstack-signal--small" aria-hidden="true"></span> Behind the interface / 03</p>
+              <h2 id="backend-heading">Logic in<br>the middle<span>.</span></h2>
+            </div>
+            <p class="fullstack-section-aside">A conceptual flow.<br>Not a claimed live endpoint.</p>
+          </div>
+          <div class="fullstack-backend">
+            <div class="fullstack-endpoint">
+              <span class="editorial-label">Example route / illustrative</span>
+              <code><b>POST</b> /api/record</code>
+              <span class="fullstack-endpoint-note editorial-label">Concept only / not implemented</span>
+            </div>
+            <ol class="fullstack-backend-steps">
+              <li><span class="editorial-label">01 / CHECK</span><b>Validate</b><i aria-hidden="true">↓</i></li>
+              <li><span class="editorial-label">02 / WORK</span><b>Process</b><i aria-hidden="true">↓</i></li>
+              <li><span class="editorial-label">03 / STORE</span><b>Persist</b><i aria-hidden="true">↓</i></li>
+              <li><span class="editorial-label">04 / RETURN</span><b>Respond</b><i aria-hidden="true">↩</i></li>
+            </ol>
+            <div class="fullstack-return-note editorial-label"><span aria-hidden="true">↩</span> Response travels back to the client</div>
+          </div>
+        </section>
+
+        <section class="fullstack-data-section" aria-labelledby="data-heading">
+          <div class="fullstack-section-heading">
+            <div>
+              <p class="editorial-label">04 — Stored state</p>
+              <h2 id="data-heading">Data has<br>shape<span>.</span></h2>
+            </div>
+            <p class="fullstack-section-aside">A schematic data view.<br>Labels are examples, not a live schema.</p>
+          </div>
+          <div class="fullstack-data-layout">
+            <div class="fullstack-data-index paper-card">
+              <div class="fullstack-data-index-head"><span class="editorial-label">Data / model</span><span class="fullstack-data-count editorial-label">04 RELATIONS</span></div>
+              <div class="fullstack-data-row fullstack-data-row--root"><span class="fullstack-data-symbol" aria-hidden="true">✳</span><b>RECORD</b><span class="editorial-label">ROOT</span></div>
+              <div class="fullstack-data-branches" aria-label="Illustrative related data entities">
+                <div class="fullstack-data-row"><span class="fullstack-data-symbol" aria-hidden="true">└</span><b>IDENTITY</b><span class="editorial-label">REFERENCE</span></div>
+                <div class="fullstack-data-row"><span class="fullstack-data-symbol" aria-hidden="true">├</span><b>EVENT</b><span class="editorial-label">ENTRY</span></div>
+                <div class="fullstack-data-row"><span class="fullstack-data-symbol" aria-hidden="true">├</span><b>RELATION</b><span class="editorial-label">LINK</span></div>
+                <div class="fullstack-data-row"><span class="fullstack-data-symbol" aria-hidden="true">└</span><b>RESULT</b><span class="editorial-label">STATE</span></div>
+              </div>
+              <p class="fullstack-data-foot editorial-label">Entities / example only</p>
+            </div>
+            <div class="fullstack-data-copy">
+              <p class="editorial-label">Structure before scale</p>
+              <p>Related records give an application memory. The model here is deliberately abstract: no database engine or production schema is implied.</p>
+              <div class="fullstack-data-tags"><span>Relational thinking</span><span>SQL / practice</span></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="fullstack-project-section" aria-labelledby="fullstack-project-heading">
+          <div class="fullstack-section-heading">
+            <div>
+              <p class="editorial-label"><span class="fullstack-signal fullstack-signal--small" aria-hidden="true"></span> Featured build / 05</p>
+              <h2 id="fullstack-project-heading">A system<br>taking shape<span>.</span></h2>
+            </div>
+            <p class="fullstack-section-aside">One ongoing application.<br>Shown at its current stage.</p>
+          </div>
+          <article class="fullstack-featured-project">
+            <div class="fullstack-project-visual" role="img" aria-label="Abstract application architecture illustration for Cyber Memory Network">
+              <span class="fullstack-project-visual-meta editorial-label">Project / 01</span>
+              <span class="fullstack-project-axis fullstack-project-axis--one" aria-hidden="true"></span>
+              <span class="fullstack-project-axis fullstack-project-axis--two" aria-hidden="true"></span>
+              <div class="fullstack-project-mini-stack" aria-hidden="true"><i>FRONTEND</i><i>API</i><i>APPLICATION</i><i>DATA</i></div>
+              <span class="fullstack-project-visual-index">CMN—01</span>
+            </div>
+            <div class="fullstack-featured-copy">
+              <p class="fullstack-project-status editorial-label"><i aria-hidden="true"></i> Phase I / in progress</p>
+              <h3>Cyber Memory<br>Network</h3>
+              <p class="fullstack-project-type editorial-label">AI-assisted security knowledge platform</p>
+              <p class="fullstack-project-description">An application concept for organizing security incidents, IOCs, investigations, and MITRE ATT&amp;CK relationships. Phase I is the current build; expanded AI workflows remain future work.</p>
+              <div class="fullstack-project-architecture" aria-label="Conceptual project architecture: frontend, API, application logic, database, security data">
+                <span>Frontend</span><i aria-hidden="true">↓</i><span>API</span><i aria-hidden="true">↓</i><span>Application logic</span><i aria-hidden="true">↓</i><span>Database</span><i aria-hidden="true">↓</i><span>Security data</span>
+              </div>
+              <a class="fullstack-project-link editorial-label" href="../projects/#cyber-memory">View project details <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+          <div class="fullstack-future-projects">
+            <article class="fullstack-future-slot">
+              <span class="editorial-label">Project / 02</span><span class="fullstack-future-number">02</span>
+              <h3>Next build</h3><p>Future application / open slot</p>
+              <span class="editorial-label fullstack-future-status">In preparation</span>
+            </article>
+            <article class="fullstack-future-slot fullstack-future-slot--quiet">
+              <span class="editorial-label">Project / 03</span><span class="fullstack-future-number">03</span>
+              <h3>In development</h3><p>Space reserved for documented work</p>
+              <span class="editorial-label fullstack-future-status">Future build</span>
+            </article>
+          </div>
+        </section>
+
+        <section class="fullstack-tools-section" aria-labelledby="tools-heading">
+          <div class="fullstack-section-heading">
+            <div>
+              <p class="editorial-label">06 — Working set</p>
+              <h2 id="tools-heading">Tools in<br>the system<span>.</span></h2>
+            </div>
+            <p class="fullstack-section-aside">Practice / building.<br>Not a claim of mastery.</p>
+          </div>
+          <div class="fullstack-tools">
+            <div class="fullstack-tool-group">
+              <span class="editorial-label">In practice</span>
+              <div><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Python</span><span>SQL</span><span>Git / GitHub</span></div>
+            </div>
+            <div class="fullstack-tool-group fullstack-tool-group--building">
+              <span class="editorial-label">Application concepts</span>
+              <div><span>Interfaces</span><span>APIs</span><span>Data models</span><span>Deployment flow</span></div>
+            </div>
+          </div>
+        </section>
+
+        <aside class="fullstack-debug" aria-label="Illustrative application status panel">
+          <div class="fullstack-debug-heading">
+            <span class="editorial-label">System note / decorative</span>
+            <span class="fullstack-debug-dot" aria-hidden="true"></span>
+          </div>
+          <div class="fullstack-debug-values">
+            <div><span class="editorial-label">Request</span><b>200 OK</b></div>
+            <div><span class="editorial-label">Latency</span><b>42 ms</b></div>
+            <div><span class="editorial-label">Database</span><b>Connected</b></div>
+            <div><span class="editorial-label">Status</span><b>Demo state</b></div>
+          </div>
+          <p class="fullstack-debug-note editorial-label">Illustrative values only / not live telemetry</p>
+        </aside>
+      </main>
+
+      <nav class="fullstack-page-nav" aria-label="Domain navigation">
+        <a class="fullstack-nav-link fullstack-nav-link--previous" href="../game-development/">
+          <span class="editorial-label">Previous / 03</span><span>← Game Development</span>
+        </a>
+        <a class="fullstack-nav-index editorial-label" href="../index.html#directions">All directions ↗</a>
+        <a class="fullstack-nav-link fullstack-nav-link--next" href="../cloud/">
+          <span class="editorial-label">Next / 05</span><span>Cloud →</span>
+        </a>
+      </nav>
+    </div>
+  </body>
+</html>

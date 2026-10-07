@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#eeeae0">
+    <meta name="description" content="Game development: interaction, mechanics and worlds in progress by Kiruthik.">
+    <title>Game Development — Kiruthik</title>
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Kiruthik">
+    <meta property="og:title" content="Game Development — Kiruthik">
+    <meta property="og:description" content="Game development: interaction, mechanics and worlds in progress by Kiruthik.">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Game Development — Kiruthik">
+    <meta name="twitter:description" content="Game development: interaction, mechanics and worlds in progress by Kiruthik.">
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+    <script src="../theme.js" defer></script>
+    <script src="../site-interactions.js" defer></script>
+    <script src="game-development.js" defer></script>
+    <link rel="stylesheet" href="../styles.css">
+  </head>
+  <body class="grid-paper">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <div class="page-shell game-page">
+      <header class="site-header">
+        <a class="wordmark" href="../index.html" aria-label="Portfolio, beginning">PORTFOLIO<span class="wordmark-mark" aria-hidden="true">.</span></a>
+        <span class="header-edition editorial-label">Security / Systems / Software</span>
+        <a class="menu-link editorial-label" href="../index.html#directions">Index <span class="arrow" aria-hidden="true">↗</span></a>
+        <button class="theme-toggle editorial-label" type="button" aria-label="Switch to dark mode" aria-pressed="false">
+          <span class="theme-toggle-option theme-toggle-option--light">Light</span><span class="theme-toggle-divider" aria-hidden="true">/</span><span class="theme-toggle-option theme-toggle-option--dark">Dark</span><span class="theme-toggle-indicator" aria-hidden="true"></span>
+        </button>
+      </header>
+
+      <main id="main-content" tabindex="-1">
+        <section class="game-hero" aria-labelledby="game-title">
+          <div class="game-hero-meta">
+            <a class="game-back editorial-label" href="../index.html#directions">← Back / index</a>
+            <span class="editorial-label">03 / 06 &nbsp;—&nbsp; Interaction / worlds / systems</span>
+          </div>
+          <div class="game-hero-layout">
+            <div class="game-hero-copy">
+              <p class="game-kicker editorial-label"><span class="game-pixel-mark" aria-hidden="true"></span> Play / make / repeat</p>
+              <h1 class="game-title" id="game-title"><span>GAME</span><span>DEVELOPMENT<span class="game-title-period">.</span></span></h1>
+              <p class="game-deck">Small systems. Playable spaces.</p>
+            </div>
+            <aside class="game-hero-note paper-card" aria-label="Game development direction">
+              <span class="editorial-label">Field note / 03</span>
+              <span class="game-note-glyph" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span>
+              <span class="editorial-label">Interaction, considered</span>
+            </aside>
+          </div>
+          <div class="game-hero-foot editorial-label">
+            <span>Mechanics before spectacle</span>
+            <span class="game-coordinate">X 03 &nbsp; / &nbsp; Y 06</span>
+          </div>
+        </section>
+
+        <section class="game-map-section" aria-labelledby="game-map-heading">
+          <div class="game-section-heading">
+            <div>
+              <p class="editorial-label"><span class="game-pixel-mark game-pixel-mark--small" aria-hidden="true"></span> Play space / 01</p>
+              <h2 id="game-map-heading">A room with<br>a way through<span>.</span></h2>
+            </div>
+            <p class="game-section-aside">An abstract level sketch.<br>Choose a marker to move the player.</p>
+          </div>
+
+          <figure class="game-world paper-card" aria-labelledby="game-world-caption">
+            <figcaption class="game-world-caption editorial-label" id="game-world-caption">
+              <span>Map study / 001</span><span>Interactive sketch / not a playable level</span>
+            </figcaption>
+            <div class="game-map-wrap">
+              <svg class="game-map" viewBox="0 0 840 480" role="img" aria-labelledby="map-title map-description">
+                <title id="map-title">An abstract four-point level map</title>
+                <desc id="map-description">A route passes through an entry, a switch and an object before reaching an exit. Use the controls below to move the player marker between them.</desc>
+                <defs>
+                  <pattern id="game-grid" width="24" height="24" patternUnits="userSpaceOnUse">
+                    <path d="M24 0H0V24" fill="none" stroke="var(--line)" stroke-width="1"/>
+                  </pattern>
+                </defs>
+                <rect class="map-field" x="12" y="12" width="816" height="456"/>
+                <path class="map-boundary" d="M43 382V82H200V145H355V82H510V145H650V82H795V382H650V337H510V400H355V337H200V400H43Z"/>
+                <path class="map-corridor" d="M112 335H243V190H374V335H505V190H635V335H730V125"/>
+                <path class="map-corridor map-corridor--active map-route" data-map-route data-current-stop="entry" d="M112 335H243V190H374V335H505V190H635V335H730V125"/>
+                <path class="map-room-line" d="M200 82V145M355 82V145M510 82V145M650 82V145M200 337V400M355 337V400M510 337V400M650 337V382"/>
+                <g class="map-decoration" aria-hidden="true">
+                  <path d="M77 111h24M89 99v24M761 415h20M771 405v20M407 78h16M415 70v16"/>
+                  <rect x="282" y="253" width="22" height="22"/><rect x="543" y="256" width="16" height="16"/>
+                  <path d="M292 253v22M282 264h22M543 264h16M551 256v16"/>
+                  <text x="56" y="62">ZONE A / 03</text><text x="689" y="438">GRID 08 × 05</text>
+                  <text x="66" y="424">ENTRY POINT</text><text x="690" y="94">EXIT / 01</text>
+                </g>
+                <g class="map-node map-node--entry is-current" data-map-node="entry" aria-hidden="true" transform="translate(112 335)">
+                  <circle class="map-node-ring" r="24"/><circle class="map-node-core" r="8"/><text y="48">01</text>
+                </g>
+                <g class="map-node" data-map-node="switch" aria-hidden="true" transform="translate(374 335)">
+                  <rect class="map-node-ring" x="-19" y="-19" width="38" height="38"/><circle class="map-node-core" r="6"/><text y="48">02</text>
+                </g>
+                <g class="map-node" data-map-node="object" aria-hidden="true" transform="translate(635 335)">
+                  <path class="map-node-ring" d="M0-23L23 0 0 23-23 0Z"/><circle class="map-node-core" r="6"/><text y="48">03</text>
+                </g>
+                <g class="map-node" data-map-node="exit" aria-hidden="true" transform="translate(730 125)">
+                  <circle class="map-node-ring" r="21"/><path class="map-node-core" d="M-7-9L9 0-7 9Z"/><text y="46">04</text>
+                </g>
+                <g class="map-player" data-map-player transform="translate(112 335)" aria-hidden="true">
+                  <path d="M0-13L11 8H-11Z"/><circle r="2"/>
+                </g>
+                <g class="map-compass" aria-hidden="true" transform="translate(778 54)">
+                  <path d="M0 12V-12M-5-5L0-12 5-5"/><text y="25">N</text>
+                </g>
+              </svg>
+            </div>
+            <div class="game-map-controls" role="group" aria-label="Choose a point on the level map">
+              <button class="game-map-stop is-current" type="button" aria-pressed="true" data-map-stop="entry">
+                <span class="game-stop-index editorial-label">01</span><span class="game-stop-name">Entry</span><span class="game-stop-kind editorial-label">Start</span>
+              </button>
+              <button class="game-map-stop" type="button" aria-pressed="false" data-map-stop="switch">
+                <span class="game-stop-index editorial-label">02</span><span class="game-stop-name">Switch</span><span class="game-stop-kind editorial-label">Mechanic</span>
+              </button>
+              <button class="game-map-stop" type="button" aria-pressed="false" data-map-stop="object">
+                <span class="game-stop-index editorial-label">03</span><span class="game-stop-name">Object</span><span class="game-stop-kind editorial-label">Target</span>
+              </button>
+              <button class="game-map-stop" type="button" aria-pressed="false" data-map-stop="exit">
+                <span class="game-stop-index editorial-label">04</span><span class="game-stop-name">Exit</span><span class="game-stop-kind editorial-label">Transition</span>
+              </button>
+            </div>
+            <div class="game-map-readout" aria-live="polite">
+              <span class="game-map-readout-index editorial-label" data-map-index>01 / ENTRY</span>
+              <p data-map-copy>The player enters the space. A route begins to emerge.</p>
+              <span class="game-map-status editorial-label"><i aria-hidden="true"></i> State / <span data-map-state>Start point selected</span></span>
+            </div>
+            <span class="game-world-corner game-world-corner--top" aria-hidden="true"></span>
+            <span class="game-world-corner game-world-corner--bottom" aria-hidden="true"></span>
+          </figure>
+          <p class="game-map-note editorial-label">Use the controls, or move between them with the keyboard.</p>
+        </section>
+
+        <section class="game-areas-section" aria-labelledby="game-areas-heading">
+          <div class="game-section-heading game-section-heading--areas">
+            <div>
+              <p class="editorial-label">02 — Areas in exploration</p>
+              <h2 id="game-areas-heading">Parts of<br>the play<span>.</span></h2>
+            </div>
+            <p class="game-section-aside">A few connected disciplines,<br>kept deliberately open.</p>
+          </div>
+          <div class="game-area-grid">
+            <article class="game-area game-area--one">
+              <span class="game-area-index editorial-label">01 / INPUT</span>
+              <span class="game-area-glyph game-area-glyph--cross" aria-hidden="true"></span>
+              <h3>Interaction</h3>
+              <p>How a small action changes what happens next.</p>
+            </article>
+            <article class="game-area game-area--two">
+              <span class="game-area-index editorial-label">02 / RULES</span>
+              <span class="game-area-glyph game-area-glyph--blocks" aria-hidden="true"></span>
+              <h3>Mechanics</h3>
+              <p>Simple rules, combined into moments of play.</p>
+            </article>
+            <article class="game-area game-area--three">
+              <span class="game-area-index editorial-label">03 / SPACE</span>
+              <span class="game-area-glyph game-area-glyph--route" aria-hidden="true"></span>
+              <h3>Level design</h3>
+              <p>Routes, rhythm and room to discover.</p>
+            </article>
+            <article class="game-area game-area--four">
+              <span class="game-area-index editorial-label">04 / BUILD</span>
+              <span class="game-area-glyph game-area-glyph--code" aria-hidden="true">&lt;/&gt;</span>
+              <h3>Programming</h3>
+              <p>Turning an idea into a system that responds.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="game-process-section" aria-labelledby="game-process-heading">
+          <div class="game-section-heading">
+            <div>
+              <p class="editorial-label"><span class="game-pixel-mark game-pixel-mark--small" aria-hidden="true"></span> From thought to build / 03</p>
+              <h2 id="game-process-heading">Make it<br>playable<span>.</span></h2>
+            </div>
+            <p class="game-section-aside">A conceptual loop,<br>not a production checklist.</p>
+          </div>
+          <ol class="game-process">
+            <li><span class="game-process-count editorial-label">01</span><span class="game-process-name">Idea</span><span class="game-process-note editorial-label">Question</span></li>
+            <li><span class="game-process-count editorial-label">02</span><span class="game-process-name">Prototype</span><span class="game-process-note editorial-label">Try</span></li>
+            <li><span class="game-process-count editorial-label">03</span><span class="game-process-name">Mechanics</span><span class="game-process-note editorial-label">Shape</span></li>
+            <li><span class="game-process-count editorial-label">04</span><span class="game-process-name">Level</span><span class="game-process-note editorial-label">Place</span></li>
+            <li><span class="game-process-count editorial-label">05</span><span class="game-process-name">Playtest</span><span class="game-process-note editorial-label">Learn</span></li>
+            <li><span class="game-process-count editorial-label">06</span><span class="game-process-name">Build</span><span class="game-process-note editorial-label">Refine</span></li>
+          </ol>
+          <p class="game-process-foot editorial-label"><span class="game-pixel-mark game-pixel-mark--small" aria-hidden="true"></span> Repeat where the play asks for it</p>
+        </section>
+
+        <section class="game-projects-section" aria-labelledby="game-projects-heading">
+          <div class="game-section-heading game-section-heading--projects">
+            <div>
+              <p class="editorial-label">04 — Level select</p>
+              <h2 id="game-projects-heading">Build slots<span>.</span></h2>
+            </div>
+            <p class="game-section-aside">No finished games presented.<br>Space held for work in progress.</p>
+          </div>
+          <div class="game-project-grid">
+            <article class="game-project">
+              <div class="game-project-image" role="img" aria-label="Blank screenshot placeholder for a game prototype">
+                <span class="game-project-cross game-project-cross--one" aria-hidden="true"></span>
+                <span class="game-project-cross game-project-cross--two" aria-hidden="true"></span>
+                <span class="game-project-placeholder editorial-label">Screenshot / pending</span>
+                <span class="game-project-frame-index">01</span>
+              </div>
+              <div class="game-project-meta"><span class="editorial-label">Level 01 / In development</span><span class="game-project-state" aria-hidden="true">■</span></div>
+              <h3>Prototype slot</h3>
+              <p>Held for a first playable study.</p>
+            </article>
+            <article class="game-project">
+              <div class="game-project-image game-project-image--second" role="img" aria-label="Blank concept or level-design image placeholder for a future game build">
+                <span class="game-project-cross game-project-cross--one" aria-hidden="true"></span>
+                <span class="game-project-cross game-project-cross--two" aria-hidden="true"></span>
+                <span class="game-project-placeholder editorial-label">Concept / pending</span>
+                <span class="game-project-frame-index">02</span>
+              </div>
+              <div class="game-project-meta"><span class="editorial-label">Level 02 / Future build</span><span class="game-project-state game-project-state--future" aria-hidden="true">□</span></div>
+              <h3>World study</h3>
+              <p>Reserved for a space in progress.</p>
+            </article>
+          </div>
+        </section>
+      </main>
+
+      <nav class="game-page-nav" aria-label="Domain navigation">
+        <a class="game-nav-link game-nav-link--previous" href="../devops/">
+          <span class="editorial-label">Previous / 02</span><span>← DevOps</span>
+        </a>
+        <a class="game-nav-index editorial-label" href="../index.html#directions">All directions ↗</a>
+        <a class="game-nav-link game-nav-link--next" href="../full-stack/">
+          <span class="editorial-label">Next / 04</span><span>Full Stack →</span>
+        </a>
+      </nav>
+    </div>
+  </body>
+</html>

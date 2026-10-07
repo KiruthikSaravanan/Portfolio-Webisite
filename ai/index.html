@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#eeeae0">
+    <meta name="description" content="AI systems, information flow, reasoning and human-guided automation — an exploration by Kiruthik.">
+    <title>AI / Intelligent Systems — Kiruthik</title>
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Kiruthik">
+    <meta property="og:title" content="AI / Intelligent Systems — Kiruthik">
+    <meta property="og:description" content="AI systems, information flow, reasoning and human-guided automation — an exploration by Kiruthik.">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="AI / Intelligent Systems — Kiruthik">
+    <meta name="twitter:description" content="AI systems, information flow, reasoning and human-guided automation — an exploration by Kiruthik.">
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+    <script src="../theme.js" defer></script>
+    <script src="../site-interactions.js" defer></script>
+    <script src="ai.js" defer></script>
+    <link rel="stylesheet" href="../styles.css">
+  </head>
+  <body class="grid-paper">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <div class="page-shell ai-page">
+      <header class="site-header">
+        <a class="wordmark" href="../index.html" aria-label="Portfolio, beginning">PORTFOLIO<span class="wordmark-mark" aria-hidden="true">.</span></a>
+        <span class="header-edition editorial-label">Security / Systems / Software</span>
+        <a class="menu-link editorial-label" href="../index.html#directions">Index <span class="arrow" aria-hidden="true">↗</span></a>
+        <button class="theme-toggle editorial-label" type="button" aria-label="Switch to dark mode" aria-pressed="false">
+          <span class="theme-toggle-option theme-toggle-option--light">Light</span><span class="theme-toggle-divider" aria-hidden="true">/</span><span class="theme-toggle-option theme-toggle-option--dark">Dark</span><span class="theme-toggle-indicator" aria-hidden="true"></span>
+        </button>
+      </header>
+
+      <main id="main-content" tabindex="-1">
+        <section class="ai-hero" aria-labelledby="ai-title">
+          <div class="ai-hero-meta">
+            <a class="ai-back editorial-label" href="../index.html#directions">← Back / index</a>
+            <span class="editorial-label">06 / 06 &nbsp;—&nbsp; AI / intelligent systems</span>
+          </div>
+          <div class="ai-hero-layout">
+            <div class="ai-hero-copy">
+              <p class="ai-kicker editorial-label"><span class="ai-signal-mark" aria-hidden="true"></span> Information / context / action</p>
+              <h1 class="ai-title" id="ai-title"><span>INTELLIGENCE</span><span>IN MOTION<span class="ai-title-period">.</span></span></h1>
+              <p class="ai-deck">Information changes shape. Decisions stay human.</p>
+            </div>
+            <aside class="ai-hero-note paper-card" aria-label="Abstract information-flow study">
+              <span class="editorial-label">Signal study / 06</span>
+              <span class="ai-hero-glyph" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><b></b></span>
+              <span class="editorial-label">Input → meaning → response</span>
+            </aside>
+          </div>
+          <div class="ai-hero-foot editorial-label">
+            <span>Models / retrieval / human judgment</span>
+            <span class="ai-hero-coordinate">FLOW / 06—06</span>
+          </div>
+        </section>
+
+        <section class="ai-flow-section" aria-labelledby="ai-flow-heading">
+          <div class="ai-section-heading">
+            <div>
+              <p class="editorial-label"><span class="ai-signal-mark ai-signal-mark--small" aria-hidden="true"></span> Information flow / 01</p>
+              <h2 id="ai-flow-heading">From signal<br>to response<span>.</span></h2>
+            </div>
+            <p class="ai-section-aside">A conceptual model of an AI pipeline.<br>Select a stage to inspect its role.</p>
+          </div>
+          <div class="ai-flow-plate paper-card" data-ai-flow-state="idle">
+            <div class="ai-flow-topline editorial-label"><span>Pipeline study / 001</span><span>Concept / not a live model</span></div>
+            <ol class="ai-flow" aria-label="Conceptual AI information pipeline">
+              <li><button class="ai-flow-stage is-active" type="button" aria-pressed="true" data-ai-stage="input"><span class="ai-stage-index editorial-label">01 / INPUT</span><b>Signal</b><small>Raw information enters</small><i aria-hidden="true"></i></button></li>
+              <li><span class="ai-flow-link" aria-hidden="true">→</span><button class="ai-flow-stage" type="button" aria-pressed="false" data-ai-stage="context"><span class="ai-stage-index editorial-label">02 / CONTEXT</span><b>Frame</b><small>Relevant information joins</small><i aria-hidden="true"></i></button></li>
+              <li><span class="ai-flow-link" aria-hidden="true">→</span><button class="ai-flow-stage" type="button" aria-pressed="false" data-ai-stage="model"><span class="ai-stage-index editorial-label">03 / MODEL</span><b>Process</b><small>Patterns are considered</small><i aria-hidden="true"></i></button></li>
+              <li><span class="ai-flow-link" aria-hidden="true">→</span><button class="ai-flow-stage" type="button" aria-pressed="false" data-ai-stage="output"><span class="ai-stage-index editorial-label">04 / OUTPUT</span><b>Respond</b><small>Text or action is returned</small><i aria-hidden="true"></i></button></li>
+            </ol>
+            <div class="ai-flow-data-fragments" aria-hidden="true"><span>text</span><span>tokens</span><span>context</span><span>signal</span><span>meaning</span></div>
+            <div class="ai-flow-controls">
+              <button class="ai-flow-run editorial-label" type="button" data-ai-run><span aria-hidden="true">▶</span><span data-ai-run-label>Trace the information</span></button>
+              <span class="editorial-label">Illustrative sequence / no model call</span>
+            </div>
+            <div class="ai-flow-readout" aria-live="polite">
+              <span class="editorial-label" data-ai-stage-index>01 / INPUT</span>
+              <p data-ai-stage-copy>Raw information enters the system before it has useful context.</p>
+              <span class="editorial-label ai-flow-status"><i aria-hidden="true"></i><span data-ai-flow-status>Stage selected</span></span>
+            </div>
+          </div>
+        </section>
+
+        <section class="ai-agent-section" aria-labelledby="ai-agent-heading">
+          <div class="ai-section-heading">
+            <div>
+              <p class="editorial-label">02 — Goal / plan / tools / result</p>
+              <h2 id="ai-agent-heading">A loop, not<br>a magic box<span>.</span></h2>
+            </div>
+            <p class="ai-section-aside">Conceptual agent loop.<br>No autonomous agent is claimed.</p>
+          </div>
+          <div class="ai-agent-layout">
+            <div class="ai-agent-loop paper-card" aria-label="Conceptual agent workflow: goal, plan, tool, observe, decide, action, and result feed into observation">
+              <div class="ai-agent-loop-label editorial-label">Conceptual agent loop</div>
+              <div class="ai-agent-sequence">
+                <span>Goal</span><i aria-hidden="true">↓</i><span>Plan</span><i aria-hidden="true">↓</i>
+                <span class="ai-agent-tool-step">Tool</span><i aria-hidden="true">↓</i><span>Observe</span><i aria-hidden="true">↓</i>
+                <span>Decide</span><i aria-hidden="true">↓</i><span>Action</span><i aria-hidden="true">↓</i><span>Result</span>
+              </div>
+              <div class="ai-agent-loopback"><i aria-hidden="true">↶</i><span class="editorial-label">Result informs the next observation</span></div>
+            </div>
+            <div class="ai-agent-tools">
+              <div class="ai-agent-tool-heading"><span class="editorial-label">Tool-use study / 01</span><span class="editorial-label">Conceptual simulation</span></div>
+              <p class="ai-agent-request editorial-label">User request / example</p>
+              <blockquote>“Investigate a security event.”</blockquote>
+              <div class="ai-agent-router" aria-hidden="true"><span>Agent selects a tool</span><i>↓</i></div>
+              <div class="ai-tool-options" role="group" aria-label="Choose a conceptual tool for the agent simulation">
+                <button type="button" aria-pressed="false" data-ai-tool="search">Search</button>
+                <button type="button" aria-pressed="false" data-ai-tool="logs">Logs</button>
+                <button type="button" aria-pressed="false" data-ai-tool="database">Database</button>
+                <button type="button" aria-pressed="false" data-ai-tool="api">API</button>
+              </div>
+              <div class="ai-tool-result" aria-live="polite"><span class="editorial-label" data-ai-tool-title>Tool / unselected</span><p data-ai-tool-copy>Select a tool to see its conceptual role in the workflow.</p></div>
+              <p class="ai-agent-disclaimer editorial-label">Example only / no real search, logs, database, or API is queried.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="ai-output-section" aria-labelledby="ai-output-heading">
+          <div class="ai-section-heading">
+            <div>
+              <p class="editorial-label"><span class="ai-signal-mark ai-signal-mark--small" aria-hidden="true"></span> Sample transformation / 03</p>
+              <h2 id="ai-output-heading">Context shapes<br>an answer<span>.</span></h2>
+            </div>
+            <p class="ai-section-aside">A made-up example for illustration.<br>Not an actual security analysis.</p>
+          </div>
+          <div class="ai-example-label editorial-label"><i aria-hidden="true"></i> Conceptual example / invented sample data</div>
+          <div class="ai-output-composition">
+            <div class="ai-output-input">
+              <span class="editorial-label">Input / fictional</span>
+              <p>Security event detected</p>
+              <span class="ai-output-fragment">AUTH_FAILURE</span>
+            </div>
+            <div class="ai-output-context">
+              <span class="editorial-label">Context / supplied</span>
+              <ul><li>Authentication logs</li><li>Incident history</li><li>Known indicators</li></ul>
+            </div>
+            <div class="ai-output-model">
+              <span class="editorial-label">Model / conceptual</span>
+              <span class="ai-model-mark" aria-hidden="true">M</span>
+              <b>Analysis</b>
+              <small>Patterns considered against context</small>
+            </div>
+            <div class="ai-output-result">
+              <span class="editorial-label">Output / unverified</span>
+              <p>Potential relationship identified.</p>
+              <span class="ai-output-human editorial-label">Human review required</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="ai-security-section" aria-labelledby="ai-security-heading">
+          <div class="ai-section-heading">
+            <div>
+              <p class="editorial-label">04 — AI / security / human review</p>
+              <h2 id="ai-security-heading">Analysis is<br>not a verdict<span>.</span></h2>
+            </div>
+            <p class="ai-section-aside">Exploring how intelligent systems<br>could assist security workflows.</p>
+          </div>
+          <div class="ai-security-flow" aria-label="Conceptual security workflow with human decision before response">
+            <div><span class="editorial-label">01 / EVENT</span><b>Security event</b></div><i aria-hidden="true">→</i>
+            <div><span class="editorial-label">02 / INPUT</span><b>Data</b></div><i aria-hidden="true">→</i>
+            <div><span class="editorial-label">03 / FRAME</span><b>Context</b></div><i aria-hidden="true">→</i>
+            <div class="ai-security-model"><span class="editorial-label">04 / CONCEPT</span><b>AI analysis</b></div><i aria-hidden="true">→</i>
+            <div class="ai-security-human"><span class="editorial-label">05 / REVIEW</span><b>Human decision</b></div><i aria-hidden="true">→</i>
+            <div><span class="editorial-label">06 / NEXT</span><b>Response</b></div>
+          </div>
+          <p class="ai-security-caveat editorial-label"><span class="ai-signal-mark ai-signal-mark--small" aria-hidden="true"></span> Concept / AI can support analysis; people verify and decide.</p>
+        </section>
+
+        <section class="ai-memory-section" aria-labelledby="ai-memory-heading">
+          <div class="ai-section-heading">
+            <div>
+              <p class="editorial-label"><span class="ai-signal-mark ai-signal-mark--small" aria-hidden="true"></span> Cyber Memory Network / 05</p>
+              <h2 id="ai-memory-heading">Current system.<br>Future layer<span>.</span></h2>
+            </div>
+            <p class="ai-section-aside">A real ongoing project direction.<br>AI extensions below are conceptual.</p>
+          </div>
+          <article class="ai-memory-plate">
+            <div class="ai-memory-current">
+              <div class="ai-memory-column-heading"><span class="editorial-label">Current / Phase I in progress</span><span class="ai-memory-stamp">01</span></div>
+              <h3>Cyber Memory<br>Network</h3>
+              <p class="ai-memory-description">An AI-assisted security knowledge and incident memory platform for organizing incidents, IOCs, investigations, and MITRE ATT&amp;CK relationships.</p>
+              <ol class="ai-memory-chain" aria-label="Current project information relationships">
+                <li>Incident</li><i aria-hidden="true">→</i><li>IOC</li><i aria-hidden="true">→</i><li>Investigation</li><i aria-hidden="true">→</i><li>MITRE ATT&amp;CK</li><i aria-hidden="true">→</i><li>Cyber Memory</li>
+              </ol>
+              <a class="ai-memory-link editorial-label" href="../projects/#cyber-memory">Project details <span aria-hidden="true">↗</span></a>
+            </div>
+            <div class="ai-memory-future">
+              <div class="ai-memory-column-heading"><span class="editorial-label">Future AI layer / conceptual</span><span class="ai-memory-stamp">02</span></div>
+              <p class="ai-memory-future-note editorial-label">Possible extension / not implemented</p>
+              <ol class="ai-future-chain" aria-label="Conceptual future AI workflow">
+                <li><span>Cyber Memory</span><i aria-hidden="true">↓</i></li>
+                <li><span>Context retrieval</span><i aria-hidden="true">↓</i></li>
+                <li><span>AI analysis</span><i aria-hidden="true">↓</i></li>
+                <li><span>Summary / recommendation</span></li>
+              </ol>
+              <p class="ai-memory-future-caveat">Future direction only. Retrieval, generated analysis, and recommendations are not presented as existing capabilities.</p>
+            </div>
+          </article>
+        </section>
+
+        <section class="ai-rag-section" aria-labelledby="ai-rag-heading">
+          <div class="ai-section-heading">
+            <div>
+              <p class="editorial-label">06 — Retrieval augmented generation</p>
+              <h2 id="ai-rag-heading">Find before<br>forming<span>.</span></h2>
+            </div>
+            <p class="ai-section-aside">A conceptual RAG pipeline.<br>No production RAG system is claimed.</p>
+          </div>
+          <div class="ai-rag-plate paper-card">
+            <div class="ai-rag-documents">
+              <span class="editorial-label">Knowledge collection / illustrative</span>
+              <div><span>Document</span><span>Log</span><span>Report</span><span>Incident</span><span>Note</span></div>
+            </div>
+            <ol class="ai-rag-flow" aria-label="Conceptual retrieval-augmented generation sequence">
+              <li><span class="editorial-label">01</span><b>User</b></li><li class="ai-rag-arrow" aria-hidden="true">↓</li>
+              <li><span class="editorial-label">02</span><b>Question</b></li><li class="ai-rag-arrow" aria-hidden="true">↓</li>
+              <li class="ai-rag-retrieval"><span class="editorial-label">03 / RETRIEVAL</span><b>Find relevant sources</b></li><li class="ai-rag-arrow" aria-hidden="true">↓</li>
+              <li><span class="editorial-label">04</span><b>Context</b></li><li class="ai-rag-arrow" aria-hidden="true">↓</li>
+              <li><span class="editorial-label">05</span><b>LLM</b></li><li class="ai-rag-arrow" aria-hidden="true">↓</li>
+              <li><span class="editorial-label">06</span><b>Answer</b></li>
+            </ol>
+            <div class="ai-rag-foot editorial-label"><span>Conceptual RAG pipeline</span><span>Retrieve / ground / generate</span></div>
+          </div>
+        </section>
+
+        <section class="ai-representation-section" aria-labelledby="ai-representation-heading">
+          <div class="ai-section-heading">
+            <div>
+              <p class="editorial-label"><span class="ai-signal-mark ai-signal-mark--small" aria-hidden="true"></span> Representation / 07</p>
+              <h2 id="ai-representation-heading">Data becomes<br>shape<span>.</span></h2>
+            </div>
+            <p class="ai-section-aside">A visual abstraction of model input.<br>Not a benchmark or model result.</p>
+          </div>
+          <div class="ai-representation-flow">
+            <div class="ai-rep-data"><span class="editorial-label">DATA / TEXT</span><span>“A signal in the noise”</span><span>Words / records / events</span></div><i aria-hidden="true">→</i>
+            <div class="ai-rep-tokens"><span class="editorial-label">TOKENS</span><div><b>A</b><b>signal</b><b>in</b><b>the</b><b>noise</b></div></div><i aria-hidden="true">→</i>
+            <div class="ai-rep-vectors"><span class="editorial-label">REPRESENTATION / CONCEPT</span><div aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><small>Embeddings / vector space</small></div><i aria-hidden="true">→</i>
+            <div class="ai-rep-model"><span class="editorial-label">MODEL</span><b>Pattern</b><small>learned relationships</small></div><i aria-hidden="true">→</i>
+            <div class="ai-rep-output"><span class="editorial-label">OUTPUT</span><b>Response</b><small>generated / selected</small></div>
+          </div>
+          <p class="ai-representation-note editorial-label">Simplified illustration / internal model behavior is not shown</p>
+        </section>
+
+        <section class="ai-human-section" aria-labelledby="ai-human-heading">
+          <div class="ai-section-heading">
+            <div>
+              <p class="editorial-label">08 — Human / system / decision</p>
+              <h2 id="ai-human-heading">Tools need<br>judgment<span>.</span></h2>
+            </div>
+            <p class="ai-section-aside">AI supports a process.<br>People set intent and verify outcomes.</p>
+          </div>
+          <div class="ai-human-composition">
+            <div class="ai-human-anchor ai-human-anchor--start"><span class="editorial-label">01 / HUMAN</span><b>Intent</b></div>
+            <div class="ai-human-steps"><span>Context</span><i aria-hidden="true">↓</i><span class="ai-human-system">AI system</span><i aria-hidden="true">↓</i><span>Analysis</span><i aria-hidden="true">↓</i><span class="ai-human-verify">Verification</span></div>
+            <div class="ai-human-anchor ai-human-anchor--end"><span class="editorial-label">02 / HUMAN</span><b>Decision</b></div>
+            <span class="ai-human-side-note editorial-label">JUDGMENT / ACTION</span>
+          </div>
+        </section>
+
+        <section class="ai-automation-section" aria-labelledby="ai-automation-heading">
+          <div class="ai-section-heading">
+            <div>
+              <p class="editorial-label"><span class="ai-signal-mark ai-signal-mark--small" aria-hidden="true"></span> Workflow study / 09</p>
+              <h2 id="ai-automation-heading">A repeatable<br>sequence<span>.</span></h2>
+            </div>
+            <p class="ai-section-aside">Conceptual automation workflow.<br>Not a completed project.</p>
+          </div>
+          <ol class="ai-automation-flow" aria-label="Conceptual security report automation sequence">
+            <li><span class="editorial-label">01 / TRIGGER</span><b>Security alert</b></li><li aria-hidden="true">→</li>
+            <li><span class="editorial-label">02 / COLLECT</span><b>Gather context</b></li><li aria-hidden="true">→</li>
+            <li><span class="editorial-label">03 / ANALYZE</span><b>Review signals</b></li><li aria-hidden="true">→</li>
+            <li><span class="editorial-label">04 / OUTPUT</span><b>Draft a report</b></li>
+          </ol>
+          <p class="ai-automation-disclaimer editorial-label">Conceptual workflow / human review before action</p>
+        </section>
+
+        <section class="ai-direction-section" aria-labelledby="ai-direction-heading">
+          <div class="ai-section-heading">
+            <div>
+              <p class="editorial-label">10 — Current / exploring / future</p>
+              <h2 id="ai-direction-heading">Work in<br>progress<span>.</span></h2>
+            </div>
+            <p class="ai-section-aside">An honest snapshot of direction.<br>No proficiency scores.</p>
+          </div>
+          <div class="ai-status-index">
+            <article><span class="editorial-label">Current / in use</span><h3>Assisted practice</h3><p>AI-assisted development / prompting / AI tools</p><span class="ai-status-index-number">01</span></article>
+            <article><span class="editorial-label">Exploring / learning</span><h3>Connected systems</h3><p>RAG / agents / LLM workflows / AI + security</p><span class="ai-status-index-number">02</span></article>
+            <article><span class="editorial-label">Future / conceptual</span><h3>Security intelligence</h3><p>Incident analysis / thoughtful automation / Cyber Memory extensions</p><span class="ai-status-index-number">03</span></article>
+          </div>
+        </section>
+
+        <section class="ai-projects-section" aria-labelledby="ai-projects-heading">
+          <div class="ai-section-heading">
+            <div>
+              <p class="editorial-label">11 — Builds / building</p>
+              <h2 id="ai-projects-heading">Room for<br>what comes next<span>.</span></h2>
+            </div>
+            <p class="ai-section-aside">One ongoing security platform.<br>No invented AI projects.</p>
+          </div>
+          <article class="ai-featured-project">
+            <div class="ai-project-visual" role="img" aria-label="Abstract information-flow illustration for the Cyber Memory Network">
+              <span class="editorial-label">Project / 01</span>
+              <div class="ai-project-fragments" aria-hidden="true"><i>INCIDENT</i><i>IOC</i><i>CONTEXT</i><i>MEMORY</i><b>CMN</b></div>
+              <span class="ai-project-visual-index">CURRENT / PHASE I</span>
+            </div>
+            <div class="ai-featured-copy">
+              <p class="editorial-label"><i aria-hidden="true"></i> In progress / AI extension is future work</p>
+              <h3>Cyber Memory<br>Network</h3>
+              <p>An AI-assisted security knowledge and incident memory platform for organizing incidents, IOCs, investigations, and MITRE ATT&amp;CK relationships.</p>
+              <p class="ai-project-caveat">Context retrieval, AI analysis, and generated recommendations shown elsewhere on this page are conceptual—not implemented project features.</p>
+              <a class="ai-project-link editorial-label" href="../projects/#cyber-memory">Project details <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+          <div class="ai-project-placeholders">
+            <article><div class="ai-project-placeholder" role="img" aria-label="Blank image area reserved for a future AI project"><span class="editorial-label">Image / pending</span><b>02</b></div><p class="editorial-label">Project / 02 — Future build</p><h3>Open slot</h3></article>
+            <article><div class="ai-project-placeholder ai-project-placeholder--second" role="img" aria-label="Blank image area reserved for another future AI project"><span class="editorial-label">Image / pending</span><b>03</b></div><p class="editorial-label">Project / 03 — In development</p><h3>Notes to come</h3></article>
+          </div>
+        </section>
+
+        <section class="ai-connections-section" aria-labelledby="ai-connections-heading">
+          <div class="ai-section-heading">
+            <div>
+              <p class="editorial-label"><span class="ai-signal-mark ai-signal-mark--small" aria-hidden="true"></span> Across disciplines / 12</p>
+              <h2 id="ai-connections-heading">One layer.<br>Many systems<span>.</span></h2>
+            </div>
+            <p class="ai-section-aside">AI meets other disciplines<br>through shared problems.</p>
+          </div>
+          <div class="ai-connections-map" aria-label="AI connections to cybersecurity, cloud, DevOps, full stack, and game development">
+            <div class="ai-connection-center"><span class="editorial-label">06 / 06</span><b>AI</b><small>Information / reasoning</small></div>
+            <a class="ai-connection ai-connection--cyber" href="../cybersecurity/"><span class="editorial-label">01 / SECURITY</span><b>Cybersecurity</b><small>Signals / analysis</small><i aria-hidden="true">↗</i></a>
+            <a class="ai-connection ai-connection--cloud" href="../cloud/"><span class="editorial-label">05 / DISTRIBUTION</span><b>Cloud</b><small>Models / infrastructure</small><i aria-hidden="true">↗</i></a>
+            <a class="ai-connection ai-connection--devops" href="../devops/"><span class="editorial-label">02 / AUTOMATION</span><b>DevOps</b><small>Assist / operate</small><i aria-hidden="true">↗</i></a>
+            <a class="ai-connection ai-connection--fullstack" href="../full-stack/"><span class="editorial-label">04 / APPLICATIONS</span><b>Full Stack</b><small>Interfaces / APIs</small><i aria-hidden="true">↗</i></a>
+            <a class="ai-connection ai-connection--games" href="../game-development/"><span class="editorial-label">03 / INTERACTION</span><b>Game Development</b><small>Systems / behavior</small><i aria-hidden="true">↗</i></a>
+          </div>
+        </section>
+      </main>
+
+      <nav class="ai-page-nav" aria-label="Domain navigation">
+        <a class="ai-nav-link ai-nav-link--previous" href="../cloud/">
+          <span class="editorial-label">Previous / 05</span><span>← Cloud</span>
+        </a>
+        <a class="ai-nav-index editorial-label" href="../index.html#directions">All directions ↗</a>
+        <a class="ai-nav-link ai-nav-link--next" href="../projects/#cyber-memory">
+          <span class="editorial-label">Work / Cyber Memory Network</span><span>Projects / work →</span>
+        </a>
+      </nav>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#eeeae0">
+    <meta name="description" content="Technical builds, security systems and project notes by Kiruthik.">
+    <title>Work / Systems — Kiruthik</title>
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Kiruthik">
+    <meta property="og:title" content="Work / Systems — Kiruthik">
+    <meta property="og:description" content="Technical builds, security systems and project notes by Kiruthik.">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Work / Systems — Kiruthik">
+    <meta name="twitter:description" content="Technical builds, security systems and project notes by Kiruthik.">
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+    <script src="../theme.js" defer></script>
+    <script src="../site-interactions.js" defer></script>
+    <script src="projects.js" defer></script>
+    <link rel="stylesheet" href="../styles.css">
+  </head>
+  <body class="grid-paper">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <div class="page-shell work-page">
+      <header class="site-header">
+        <a class="wordmark" href="../index.html" aria-label="Portfolio, beginning">PORTFOLIO<span class="wordmark-mark" aria-hidden="true">.</span></a>
+        <span class="header-edition editorial-label">Security / Systems / Software</span>
+        <a class="menu-link editorial-label" href="../index.html#directions">Index <span class="arrow" aria-hidden="true">↗</span></a>
+        <button class="theme-toggle editorial-label" type="button" aria-label="Switch to dark mode" aria-pressed="false">
+          <span class="theme-toggle-option theme-toggle-option--light">Light</span><span class="theme-toggle-divider" aria-hidden="true">/</span><span class="theme-toggle-option theme-toggle-option--dark">Dark</span><span class="theme-toggle-indicator" aria-hidden="true"></span>
+        </button>
+      </header>
+
+      <main id="main-content" tabindex="-1">
+        <section class="work-hero" aria-labelledby="work-title">
+          <div class="work-hero-meta editorial-label"><a href="../index.html#directions">← Index</a><span>Work archive / 01—05</span></div>
+          <div class="work-hero-main">
+            <div>
+              <p class="work-kicker editorial-label"><i aria-hidden="true"></i> Builds / systems / field notes</p>
+              <h1 id="work-title">SELECTED<br><span>／ WORK<span>.</span></span></h1>
+            </div>
+            <p class="work-hero-note">Technical artifacts<br>in progress and in record.</p>
+          </div>
+          <div class="work-hero-foot editorial-label"><span>01 &nbsp;—&nbsp; SYSTEMS</span><span>02 &nbsp;—&nbsp; SECURITY</span><span>03 &nbsp;—&nbsp; BUILDS</span><span>Archive / open</span></div>
+        </section>
+
+        <section class="work-index-section" aria-labelledby="work-index-title">
+          <div class="work-index-heading">
+            <div><p class="editorial-label">Field index / filter</p><h2 id="work-index-title">Filed by<br>discipline<span>.</span></h2></div>
+            <p>Two documented builds.<br>More space, left open.</p>
+          </div>
+          <div class="work-filter-list" role="group" aria-label="Filter work by discipline">
+            <button class="work-filter is-active" type="button" data-work-filter="all" aria-pressed="true">All <span>02</span></button>
+            <button class="work-filter" type="button" data-work-filter="security" aria-pressed="false">Security</button>
+            <button class="work-filter" type="button" data-work-filter="cloud" aria-pressed="false">Cloud</button>
+            <button class="work-filter" type="button" data-work-filter="devops" aria-pressed="false">DevOps</button>
+            <button class="work-filter" type="button" data-work-filter="full-stack" aria-pressed="false">Full stack</button>
+            <button class="work-filter" type="button" data-work-filter="ai" aria-pressed="false">AI</button>
+            <button class="work-filter" type="button" data-work-filter="game-development" aria-pressed="false">Game development</button>
+          </div>
+          <p class="work-filter-status editorial-label" data-work-filter-status aria-live="polite">Showing 2 documented builds. Unfiled disciplines remain open.</p>
+        </section>
+
+        <section class="work-featured work-project" id="cyber-memory" data-project="cyber-memory" data-categories="security ai" aria-labelledby="cmn-title">
+          <div class="work-project-heading">
+            <p class="editorial-label"><span class="work-index-mark" aria-hidden="true"></span> Project / 01 &nbsp;—&nbsp; Phase I</p>
+            <span class="editorial-label work-project-state">In progress / current build</span>
+          </div>
+          <div class="work-feature-layout">
+            <div class="work-feature-copy">
+              <p class="editorial-label">Security knowledge / incident memory</p>
+              <h2 id="cmn-title">CYBER MEMORY<br>NETWORK<span>.</span></h2>
+              <p class="work-project-subtitle">AI-ASSISTED SECURITY KNOWLEDGE<br>FOR INCIDENT INVESTIGATION</p>
+              <p class="work-project-description">An evolving security knowledge and incident-memory platform for organizing incidents, indicators, investigations, and MITRE ATT&amp;CK relationships.</p>
+              <p class="work-accuracy-note">Phase I is the current build. Extended AI workflows are future work, not implemented features.</p>
+              <a class="work-case-jump editorial-label" href="#cmn-case-file">Open case file <span aria-hidden="true">↓</span></a>
+            </div>
+
+            <figure class="work-flow-figure" aria-labelledby="work-flow-caption">
+              <figcaption id="work-flow-caption" class="work-flow-caption editorial-label"><span>Information path / system model</span><span>Conceptual / not live telemetry</span></figcaption>
+              <ol class="work-flow" aria-label="Conceptual path from event records to investigation">
+                <li><button class="work-flow-node" type="button" data-work-node="logs" aria-pressed="false">LOGS</button><small>Events</small></li>
+                <li><button class="work-flow-node" type="button" data-work-node="detection" aria-pressed="false">DETECTION</button><small>Signal</small></li>
+                <li><button class="work-flow-node work-flow-node--alert" type="button" data-work-node="alert" aria-pressed="false">ALERT</button><small>Review</small></li>
+                <li><button class="work-flow-node" type="button" data-work-node="incident" aria-pressed="false">INCIDENT</button><small>Case</small></li>
+                <li><button class="work-flow-node work-flow-node--ioc" type="button" data-work-node="ioc" aria-pressed="false">IOC</button><small>Indicator</small></li>
+                <li><button class="work-flow-node" type="button" data-work-node="attack" aria-pressed="false">ATT&amp;CK</button><small>Technique</small></li>
+                <li><button class="work-flow-node work-flow-node--memory" type="button" data-work-node="memory" aria-pressed="false">CYBER<br>MEMORY</button><small>Relationships</small></li>
+                <li><button class="work-flow-node" type="button" data-work-node="investigation" aria-pressed="false">INVESTIGATION</button><small>Context</small></li>
+              </ol>
+              <div class="work-flow-fragments editorial-label" aria-hidden="true"><span>INC—01</span><span>IOC / RELATION</span><span>T—0000</span><span>FIG. 01</span></div>
+              <p class="work-flow-readout" aria-live="polite"><span class="editorial-label">System note</span><span data-work-node-copy>Select a node to inspect its conceptual role. No live data is connected.</span></p>
+            </figure>
+          </div>
+
+          <dl class="work-meta-strip">
+            <div><dt class="editorial-label">Status</dt><dd>Phase I / in progress</dd></div>
+            <div><dt class="editorial-label">Type</dt><dd>Security knowledge platform</dd></div>
+            <div><dt class="editorial-label">Stack</dt><dd>Python / API / PostgreSQL / Web</dd></div>
+            <div><dt class="editorial-label">Focus</dt><dd>Incident memory / ATT&amp;CK context</dd></div>
+          </dl>
+          <div class="work-skill-connections" aria-label="Cyber Memory Network related skills">
+            <span class="editorial-label">Connected skills</span>
+            <a href="../skills/?focus=python#knowledge-map">Python ↗</a>
+            <a href="../skills/?focus=postgresql#knowledge-map">PostgreSQL ↗</a>
+            <a href="../skills/?focus=security#knowledge-map">Security ↗</a>
+            <a href="../skills/?focus=mitre#knowledge-map">MITRE ATT&amp;CK ↗</a>
+            <a href="../skills/?focus=api#knowledge-map">APIs ↗</a>
+          </div>
+
+          <details class="work-case-file" id="cmn-case-file">
+            <summary><span class="editorial-label">Case file / 01—06</span><strong>Expand system notes</strong><span class="work-case-toggle" aria-hidden="true">＋</span></summary>
+            <div class="work-case-content">
+              <section class="work-case-section" aria-labelledby="cmn-problem">
+                <span class="editorial-label">01 / Problem</span>
+                <div><h3 id="cmn-problem">Investigation context<br>is hard to carry forward.</h3><p>Security investigations generate incidents, indicators, relationships and response knowledge. This project explores how that context can be organized for reuse in later investigations; it does not claim enterprise deployment.</p></div>
+              </section>
+              <section class="work-case-section" aria-labelledby="cmn-approach">
+                <span class="editorial-label">02 / Approach</span>
+                <div><h3 id="cmn-approach">Connect the records.</h3><p>Bring incident records, IOCs, investigations and ATT&amp;CK techniques into one structured security-memory model, with related context available for review.</p><div class="work-relationship-line editorial-label"><span>INCIDENT</span><i aria-hidden="true">↔</i><span>IOC</span><i aria-hidden="true">↔</i><span>TECHNIQUE</span><i aria-hidden="true">↔</i><span>INVESTIGATION</span></div></div>
+              </section>
+              <section class="work-case-section" aria-labelledby="cmn-architecture">
+                <span class="editorial-label">03 / Architecture</span>
+                <div><h3 id="cmn-architecture">A record moves<br>through a system.</h3><p class="work-case-caveat">Descriptive architecture study / not a deployment diagram</p>
+                  <ol class="work-architecture" aria-label="Conceptual application architecture">
+                    <li><span>01</span><b>USER</b><small>Investigator</small></li><li><i aria-hidden="true">↓</i></li>
+                    <li><span>02</span><b>WEB INTERFACE</b><small>HTML / CSS / JavaScript</small></li><li><i aria-hidden="true">↓</i></li>
+                    <li><span>03</span><b>API</b><small>Python service layer</small></li><li><i aria-hidden="true">↓</i></li>
+                    <li><span>04</span><b>BUSINESS LOGIC</b><small>Records / relationships</small></li><li><i aria-hidden="true">↓</i></li>
+                    <li><span>05</span><b>DATABASE</b><small>PostgreSQL</small></li><li><i aria-hidden="true">↓</i></li>
+                    <li class="work-architecture-end"><span>06</span><b>SECURITY MEMORY</b><small>Incidents / IOCs / techniques</small></li>
+                  </ol>
+                </div>
+              </section>
+              <section class="work-case-section" aria-labelledby="cmn-implementation">
+                <span class="editorial-label">04 / Implementation</span>
+                <div><h3 id="cmn-implementation">Working vocabulary.</h3><ul class="work-implementation-list"><li>Authentication</li><li>Incident management</li><li>IOC management</li><li>MITRE mapping</li><li>Similar incident search</li><li>Dashboard</li><li>Report generation</li></ul></div>
+              </section>
+              <section class="work-case-section" aria-labelledby="cmn-current">
+                <span class="editorial-label">05 / Current state</span>
+                <div><h3 id="cmn-current">Phase I / in progress.</h3><p>The current project is described around incident management, IOC records, ATT&amp;CK mapping, similar incident search, dashboard views and report generation. AI-assisted extensions are not represented as shipped functionality.</p></div>
+              </section>
+              <section class="work-case-section" aria-labelledby="cmn-next">
+                <span class="editorial-label">06 / Next stage</span>
+                <div><h3 id="cmn-next">Future / not implemented.</h3><ul class="work-future-list"><li>AI summarization</li><li>Graph visualization</li><li>Threat intelligence</li><li>Cloud ingestion</li><li>Automated recommendations</li></ul></div>
+              </section>
+            </div>
+          </details>
+
+          <figure class="work-screenshot paper-card">
+            <div class="work-screenshot-blank" role="img" aria-label="Blank framed area reserved for a Cyber Memory Network project screenshot"><span class="editorial-label">Project interface / pending</span><b>SCREENSHOT<br> / REPLACE LATER</b><span class="work-screenshot-index editorial-label">FIG. 01 — CMN</span></div>
+            <figcaption class="editorial-label">Interface capture / placeholder</figcaption>
+          </figure>
+        </section>
+
+        <section class="work-secondary work-project" id="linux-audit" data-project="linux-audit" data-categories="security" aria-labelledby="linux-audit-title">
+          <div class="work-project-heading"><p class="editorial-label"><span class="work-index-mark" aria-hidden="true"></span> Project / 02 &nbsp;—&nbsp; Toolkit</p><span class="editorial-label">Linux / Bash / security audit</span></div>
+          <div class="work-linux-layout">
+            <div class="work-linux-copy">
+              <p class="editorial-label">System visibility / local audit</p>
+              <h2 id="linux-audit-title">LINUX SECURITY<br>AUDIT TOOLKIT<span>.</span></h2>
+              <p>A Bash-based Linux security auditing toolkit that collects system, user, process, networking and security information into timestamped reports.</p>
+              <ul class="work-tech-tags" aria-label="Project areas"><li>Linux</li><li>Bash</li><li>Security auditing</li><li>Networking</li><li>System information</li><li>Automation</li></ul>
+              <div class="work-skill-connections" aria-label="Linux Security Audit Toolkit related skills">
+                <span class="editorial-label">Connected skills</span>
+                <a href="../skills/?focus=linux#knowledge-map">Linux ↗</a>
+                <a href="../skills/?focus=bash#knowledge-map">Bash ↗</a>
+                <a href="../skills/?focus=networking#knowledge-map">Networking ↗</a>
+                <a href="../skills/?focus=automation#knowledge-map">Automation ↗</a>
+              </div>
+            </div>
+            <figure class="work-terminal">
+              <figcaption class="work-terminal-head editorial-label"><span>Audit record / format study</span><span>Conceptual output</span></figcaption>
+              <div class="work-terminal-body" role="img" aria-label="Conceptual, non-live illustration of report sections created by the toolkit">
+                <p><span class="work-terminal-prompt">#</span> REPORT / &lt;timestamp&gt;</p>
+                <p class="work-terminal-muted">audit-report/</p>
+                <hr>
+                <p><span>01</span> SYSTEM</p><p><span>02</span> USERS</p><p><span>03</span> PROCESSES</p><p><span>04</span> NETWORK</p>
+                <p><span>05</span> SSH / FIREWALL / PORTS</p><p><span>06</span> SECURITY NOTES</p>
+                <small>ILLUSTRATIVE REPORT STRUCTURE / NO LIVE SCAN</small>
+              </div>
+              <span class="work-terminal-corner" aria-hidden="true"></span>
+            </figure>
+          </div>
+          <div class="work-linux-foot editorial-label"><span>System visibility</span><span>Reports / generated at run time</span></div>
+        </section>
+
+        <section class="work-comparison" aria-labelledby="comparison-title">
+          <div class="work-section-heading"><p class="editorial-label">Two scopes / one discipline</p><h2 id="comparison-title">Visibility<br>meets memory<span>.</span></h2></div>
+          <div class="work-comparison-map">
+            <article><span class="editorial-label">Project / 02</span><h3>Linux Security<br>Audit Toolkit</h3><p>→ &nbsp; System visibility</p></article>
+            <span class="work-comparison-plus" aria-hidden="true">＋</span>
+            <article><span class="editorial-label">Project / 01</span><h3>Cyber Memory<br>Network</h3><p>→ &nbsp; Investigation memory</p></article>
+            <div class="work-comparison-result"><span class="editorial-label">Shared direction</span><b>DEFENSIVE<br>SECURITY</b></div>
+          </div>
+        </section>
+
+        <section class="work-timeline-section" aria-labelledby="work-timeline-title">
+          <div class="work-section-heading"><p class="editorial-label">Build sequence / undated</p><h2 id="work-timeline-title">From idea<br>to record<span>.</span></h2><p>No milestones are assigned dates.</p></div>
+          <ol class="work-timeline">
+            <li><span>01</span><b>Concept</b></li><li><span>02</span><b>Design</b></li><li><span>03</span><b>Implementation</b></li><li><span>04</span><b>Testing</b></li><li><span>05</span><b>Documentation</b></li><li class="is-current"><span>06</span><b>Phase I / current</b></li><li class="is-future"><span>07</span><b>Future</b></li>
+          </ol>
+        </section>
+
+        <section class="work-artifacts-section" aria-labelledby="work-artifacts-title">
+          <div class="work-section-heading"><p class="editorial-label">Records / reference material</p><h2 id="work-artifacts-title">Technical<br>artifacts<span>.</span></h2><p>Resources will link here when available.</p></div>
+          <ul class="work-artifacts">
+            <li><span class="editorial-label">01 / README</span><b>Project notes</b><small>Resource / not linked</small></li>
+            <li><span class="editorial-label">02 / ARCHITECTURE</span><b>System model</b><small>Study / on this page</small></li>
+            <li><span class="editorial-label">03 / DATABASE</span><b>Data design</b><small>Resource / not linked</small></li>
+            <li><span class="editorial-label">04 / API</span><b>Documentation</b><small>Resource / not linked</small></li>
+            <li><span class="editorial-label">05 / SOURCE</span><b>Repository</b><small>URL / not listed</small></li>
+          </ul>
+        </section>
+
+        <section class="work-future-section" aria-labelledby="work-future-title">
+          <div class="work-section-heading"><p class="editorial-label">Open slots / no titles assigned</p><h2 id="work-future-title">Room for<br>what follows<span>.</span></h2></div>
+          <div class="work-future-grid">
+            <article class="work-project" data-project="slot-03" data-categories=""><div class="work-future-visual" role="img" aria-label="Blank placeholder for future project 03"><span class="editorial-label">Image / pending</span><b>03</b><i aria-hidden="true"></i></div><p class="editorial-label">Project / 03</p><h3>Open slot</h3><span class="editorial-label">Build / not named</span></article>
+            <article class="work-project" data-project="slot-04" data-categories=""><div class="work-future-visual work-future-visual--offset" role="img" aria-label="Blank placeholder for future project 04"><span class="editorial-label">Image / pending</span><b>04</b><i aria-hidden="true"></i></div><p class="editorial-label">Project / 04</p><h3>Open slot</h3><span class="editorial-label">Build / not named</span></article>
+            <article class="work-project" data-project="slot-05" data-categories=""><div class="work-future-visual work-future-visual--third" role="img" aria-label="Blank placeholder for future project 05"><span class="editorial-label">Image / pending</span><b>05</b><i aria-hidden="true"></i></div><p class="editorial-label">Project / 05</p><h3>Open slot</h3><span class="editorial-label">Build / not named</span></article>
+          </div>
+        </section>
+      </main>
+
+      <footer class="work-footer">
+        <a href="../index.html#directions"><span class="editorial-label">← Projects / index</span><strong>Return to the index</strong></a>
+        <a href="../skills/"><span class="editorial-label">Learning system</span><strong>Skills / map ↗</strong></a>
+        <a href="../ai/"><span class="editorial-label">Related direction / 06</span><strong>AI / systems ↗</strong></a>
+      </footer>
+    </div>
+  </body>
+</html>

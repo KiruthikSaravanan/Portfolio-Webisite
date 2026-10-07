@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#eeeae0">
+    <meta name="description" content="DevOps practice, infrastructure and delivery by Kiruthik.">
+    <title>DevOps — Kiruthik</title>
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Kiruthik">
+    <meta property="og:title" content="DevOps — Kiruthik">
+    <meta property="og:description" content="DevOps practice, infrastructure and delivery by Kiruthik.">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="DevOps — Kiruthik">
+    <meta name="twitter:description" content="DevOps practice, infrastructure and delivery by Kiruthik.">
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+    <script src="../theme.js" defer></script>
+    <script src="../site-interactions.js" defer></script>
+    <script src="devops.js" defer></script>
+    <link rel="stylesheet" href="../styles.css">
+  </head>
+  <body class="grid-paper">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <div class="page-shell devops-page">
+      <header class="site-header">
+        <a class="wordmark" href="../index.html" aria-label="Portfolio, beginning">PORTFOLIO<span class="wordmark-mark" aria-hidden="true">.</span></a>
+        <span class="header-edition editorial-label">Security / Systems / Software</span>
+        <a class="menu-link editorial-label" href="../index.html#directions">Index <span class="arrow" aria-hidden="true">↗</span></a>
+        <button class="theme-toggle editorial-label" type="button" aria-label="Switch to dark mode" aria-pressed="false">
+          <span class="theme-toggle-option theme-toggle-option--light">Light</span><span class="theme-toggle-divider" aria-hidden="true">/</span><span class="theme-toggle-option theme-toggle-option--dark">Dark</span><span class="theme-toggle-indicator" aria-hidden="true"></span>
+        </button>
+      </header>
+
+      <main id="main-content" tabindex="-1">
+        <section class="devops-hero" aria-labelledby="devops-title">
+          <div class="devops-hero-top">
+            <a class="devops-back editorial-label" href="../index.html#directions">← Back / index</a>
+            <span class="editorial-label">02 / 06 &nbsp;—&nbsp; Systems / delivery</span>
+          </div>
+          <div class="devops-hero-copy">
+            <p class="devops-kicker editorial-label"><span class="graphic-mark graphic-mark--small" aria-hidden="true"></span> Source / delivery / operations</p>
+            <h1 class="devops-title" id="devops-title"><span>DEV</span><span>OPS<span>.</span></span></h1>
+            <p class="devops-deck">From source to running system.</p>
+          </div>
+
+          <figure class="pipeline-plate paper-card" aria-labelledby="pipeline-caption">
+            <figcaption class="pipeline-caption editorial-label" id="pipeline-caption">
+              <span>Delivery sequence / 01</span><span>Illustrative flow / not a live deployment</span>
+            </figcaption>
+            <div class="pipeline-desktop">
+              <svg class="pipeline-diagram" viewBox="0 0 1000 390" role="img" aria-labelledby="pipeline-title pipeline-description">
+                <title id="pipeline-title">A five-stage deployment pipeline</title>
+                <desc id="pipeline-description">Select each stage to inspect a short description of source, build, test, deploy and monitor.</desc>
+                <defs>
+                  <pattern id="pipeline-grid" width="28" height="28" patternUnits="userSpaceOnUse">
+                    <path d="M28 0H0V28" fill="none" stroke="var(--line)" stroke-width="1"/>
+                  </pattern>
+                </defs>
+                <rect class="pipeline-grid-field" x="12" y="20" width="976" height="340"/>
+                <path class="pipeline-route" d="M112 188H888"/>
+                <path class="pipeline-route pipeline-route--moving" d="M112 188H888"/>
+                <path class="pipeline-branch" d="M500 188V275H680"/>
+                <text class="pipeline-svg-meta" x="32" y="51">FLOW / 02—06</text>
+                <text class="pipeline-svg-meta" x="833" y="338">SOURCE → RUN</text>
+                <g class="pipeline-svg-step is-active" role="button" tabindex="0" aria-pressed="true" aria-label="Code stage: versioned source" data-pipeline-step="code" transform="translate(112 188)">
+                  <circle class="step-ring" r="42"/><circle class="step-core" r="5"/><text class="step-index" x="0" y="-61">01</text><text class="step-name" x="0" y="76">CODE</text><text class="step-hint" x="0" y="97">SOURCE</text>
+                </g>
+                <g class="pipeline-svg-step" role="button" tabindex="0" aria-pressed="false" aria-label="Build stage: assemble from a recipe" data-pipeline-step="build" transform="translate(306 188)">
+                  <rect class="step-ring" x="-35" y="-35" width="70" height="70"/><circle class="step-core" r="5"/><text class="step-index" x="0" y="-61">02</text><text class="step-name" x="0" y="76">BUILD</text><text class="step-hint" x="0" y="97">ASSEMBLE</text>
+                </g>
+                <g class="pipeline-svg-step" role="button" tabindex="0" aria-pressed="false" aria-label="Test stage: check the build" data-pipeline-step="test" transform="translate(500 188)">
+                  <circle class="step-ring" r="42"/><circle class="step-core" r="5"/><text class="step-index" x="0" y="-61">03</text><text class="step-name" x="0" y="76">TEST</text><text class="step-hint" x="0" y="97">VERIFY</text>
+                </g>
+                <g class="pipeline-svg-step" role="button" tabindex="0" aria-pressed="false" aria-label="Deploy stage: release an artifact" data-pipeline-step="deploy" transform="translate(694 188)">
+                  <path class="step-ring" d="M0-43L43 0 0 43-43 0Z"/><circle class="step-core" r="5"/><text class="step-index" x="0" y="-61">04</text><text class="step-name" x="0" y="76">DEPLOY</text><text class="step-hint" x="0" y="97">RELEASE</text>
+                </g>
+                <g class="pipeline-svg-step" role="button" tabindex="0" aria-pressed="false" aria-label="Monitor stage: observe the running system" data-pipeline-step="monitor" transform="translate(888 188)">
+                  <circle class="step-ring" r="42"/><circle class="step-core" r="5"/><text class="step-index" x="0" y="-61">05</text><text class="step-name" x="0" y="76">MONITOR</text><text class="step-hint" x="0" y="97">OBSERVE</text>
+                </g>
+                <g class="pipeline-svg-note" aria-hidden="true" transform="translate(680 275)">
+                  <rect x="-62" y="-18" width="124" height="36"/>
+                  <text x="0" y="4">INFRASTRUCTURE</text>
+                </g>
+              </svg>
+            </div>
+
+            <div class="pipeline-mobile" aria-label="Interactive deployment stages">
+              <button class="pipeline-mobile-step is-active" type="button" aria-pressed="true" data-pipeline-step="code"><span>01</span><b>Code</b><i>Source</i></button>
+              <button class="pipeline-mobile-step" type="button" aria-pressed="false" data-pipeline-step="build"><span>02</span><b>Build</b><i>Assemble</i></button>
+              <button class="pipeline-mobile-step" type="button" aria-pressed="false" data-pipeline-step="test"><span>03</span><b>Test</b><i>Verify</i></button>
+              <button class="pipeline-mobile-step" type="button" aria-pressed="false" data-pipeline-step="deploy"><span>04</span><b>Deploy</b><i>Release</i></button>
+              <button class="pipeline-mobile-step" type="button" aria-pressed="false" data-pipeline-step="monitor"><span>05</span><b>Monitor</b><i>Observe</i></button>
+            </div>
+
+            <div class="pipeline-detail" aria-live="polite">
+              <span class="pipeline-detail-index editorial-label" data-pipeline-index>01 / SOURCE</span>
+              <p class="pipeline-detail-copy" data-pipeline-copy>Changes are versioned before they enter the delivery flow.</p>
+              <span class="pipeline-detail-note editorial-label">Select a stage to inspect</span>
+            </div>
+            <span class="pipeline-corner pipeline-corner--top" aria-hidden="true"></span>
+            <span class="pipeline-corner pipeline-corner--bottom" aria-hidden="true"></span>
+          </figure>
+
+          <div class="devops-hero-foot">
+            <span class="editorial-label">Build / verify / release / observe</span>
+            <span class="devops-foot-mark"><span class="graphic-mark graphic-mark--small" aria-hidden="true"></span> Systems in motion</span>
+          </div>
+        </section>
+
+        <section class="devops-section flow-section" aria-labelledby="flow-title">
+          <div class="devops-section-heading">
+            <p class="editorial-label">01 — System flow</p>
+            <h2 id="flow-title">One change.<br>Many stages<span>.</span></h2>
+            <p>Source becomes an artifact; infrastructure carries it forward.</p>
+          </div>
+          <div class="system-flow" aria-label="Source flows through build and test to deployment, infrastructure and monitoring">
+            <div class="flow-primary">
+              <span>Source</span><i aria-hidden="true">→</i><span>Build</span><i aria-hidden="true">→</i><span>Test</span><i aria-hidden="true">→</i><span>Deploy</span><i aria-hidden="true">→</i><span>Monitor</span>
+            </div>
+            <div class="flow-infrastructure"><span class="graphic-mark graphic-mark--small" aria-hidden="true"></span><b>Infrastructure</b><span>repeatable / observable</span></div>
+          </div>
+        </section>
+
+        <section class="devops-section automation-section" aria-labelledby="automation-title">
+          <div class="devops-section-heading">
+            <p class="editorial-label">02 — Automation study</p>
+            <h2 id="automation-title">A small<br>chain reaction<span>.</span></h2>
+            <p>A push can set work in motion; each step still needs a check.</p>
+          </div>
+          <div class="automation-plate">
+            <div class="automation-trigger editorial-label"><span>Trigger</span><code>git push</code></div>
+            <div class="automation-link" aria-hidden="true"></div>
+            <div class="automation-stages">
+              <span><i>01</i>Build</span><span><i>02</i>Test</span><span><i>03</i>Package</span><span><i>04</i>Deploy</span>
+            </div>
+            <p class="automation-note editorial-label">Example workflow / illustrative only</p>
+          </div>
+        </section>
+
+        <section class="devops-section practice-section" aria-labelledby="devops-practice-title">
+          <div class="devops-section-heading">
+            <p class="editorial-label">03 — Practice &amp; exploration</p>
+            <h2 id="devops-practice-title">Tools meet<br>the pipeline<span>.</span></h2>
+            <p>Separated by what is in practice and what is being explored.</p>
+          </div>
+          <div class="devops-practice-columns">
+            <div class="practice-group">
+              <div class="practice-group-heading"><span class="practice-status practice-status--current"></span><h3>Current practice</h3></div>
+              <div class="devops-tech-list"><span>Linux</span><span>Git / GitHub</span><span>Bash</span><span>Python</span></div>
+            </div>
+            <div class="practice-group practice-group--explore">
+              <div class="practice-group-heading"><span class="practice-status practice-status--next"></span><h3>Exploring</h3></div>
+              <div class="devops-tech-list"><span>Docker</span><span>CI / CD</span><span>Cloud</span><span>Monitoring</span></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="devops-section terminal-section" aria-labelledby="terminal-title">
+          <div class="devops-section-heading">
+            <p class="editorial-label">04 — Run / example</p>
+            <h2 id="terminal-title">A delivery<br>snapshot<span>.</span></h2>
+            <p>Static illustration. No live build or deployment is connected.</p>
+          </div>
+          <div class="delivery-terminal" aria-label="Illustrative terminal output, not a live pipeline">
+            <div class="terminal-top"><span>Workflow / example</span><span class="terminal-lights" aria-hidden="true"><i></i><i></i><i></i></span></div>
+            <p class="terminal-command"><span>$</span> git push origin main</p>
+            <div class="terminal-row"><span>BUILD</span><i></i><b>EXAMPLE</b></div>
+            <div class="terminal-row"><span>TEST</span><i></i><b>EXAMPLE</b></div>
+            <div class="terminal-row"><span>PACKAGE</span><i></i><b>EXAMPLE</b></div>
+            <div class="terminal-row"><span>DEPLOY</span><i></i><b>EXAMPLE</b></div>
+            <p class="terminal-disclaimer editorial-label">Demonstration only / not a production status</p>
+          </div>
+        </section>
+
+        <section class="devops-section progression-section" aria-labelledby="devops-progression-title">
+          <div class="devops-section-heading">
+            <p class="editorial-label">05 — Learning sequence</p>
+            <h2 id="devops-progression-title">From machine<br>to service<span>.</span></h2>
+            <p>A direction of study, not a measure of mastery.</p>
+          </div>
+          <ol class="devops-progression">
+            <li><span>01</span><b>Foundation</b><small>Linux / Git</small><i>Active</i></li>
+            <li><span>02</span><b>Automation</b><small>Bash / Python</small><i>Active</i></li>
+            <li><span>03</span><b>Containers</b><small>Docker</small><i>Exploring</i></li>
+            <li><span>04</span><b>Delivery</b><small>CI / CD</small><i>Next</i></li>
+            <li><span>05</span><b>Infrastructure</b><small>Cloud</small><i>Next</i></li>
+            <li><span>06</span><b>Monitoring</b><small>Observability</small><i>Exploring</i></li>
+          </ol>
+        </section>
+
+        <section class="devops-section devops-projects" aria-labelledby="devops-projects-title">
+          <div class="devops-section-heading">
+            <p class="editorial-label">06 — Project desk</p>
+            <h2 id="devops-projects-title">Work in<br>development<span>.</span></h2>
+            <p>No dedicated DevOps projects published yet.</p>
+          </div>
+          <div class="devops-project-placeholders">
+            <div class="devops-project-placeholder" role="img" aria-label="Blank placeholder for a future DevOps project screenshot">
+              <span class="editorial-label">Project / 01</span><span class="project-placeholder-label">SCREENSHOT<br>PENDING</span><span class="editorial-label">Pipeline study</span>
+            </div>
+            <div class="devops-project-placeholder" role="img" aria-label="Blank placeholder for a future infrastructure diagram">
+              <span class="editorial-label">Project / 02</span><span class="project-placeholder-label">DIAGRAM<br>PENDING</span><span class="editorial-label">Infrastructure study</span>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="devops-footer">
+        <a href="../cybersecurity/"><span class="editorial-label">← Previous / 01</span><strong>Cybersecurity</strong></a>
+        <a href="../index.html#directions"><span class="editorial-label">All directions</span><strong>Return to index ↗</strong></a>
+        <a href="../game-development/"><span class="editorial-label">Next / 03</span><strong>Game development ↗</strong></a>
+      </footer>
+    </div>
+  </body>
+</html>
